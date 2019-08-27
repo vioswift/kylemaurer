@@ -1,18 +1,27 @@
 /* Main content */
 .content {
     margin-top: 50px;
-    margin-left: 200px; /* Same as the width of the sidenav */
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
     padding: 0px 10px;
 }
 
+/* top navigation */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+
+/* side navigation */
 #menuToggle {
     display: block;
     position: fixed;
     top: 50px;
     left: 50px;
-
-    /* added height */
-    height: 100vh; 
+    height: 100vh;
 
     z-index: 1;
 
@@ -100,8 +109,6 @@
 #menu {
     position: absolute;
     width: 170px;
-
-    /* added height */
     height: 100vh;
     margin: -100px 0 0 -50px;
     padding: 50px;
@@ -132,7 +139,28 @@
 
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 700px) {
+    .topnav {
+        display: block;
+    }
+
+    /* side navigation */
+    #menuToggle {
+        top: 20px;
+        left: 20px;
+    }
+
+    #menu {
+        width: 100vh;
+    }
+
+    .content {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+}
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+
+}
