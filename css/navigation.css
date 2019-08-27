@@ -1,7 +1,7 @@
 /* Main content */
 .content {
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 300px;
     /* Same as the width of the sidenav */
     padding: 0px 10px;
 }
@@ -136,7 +136,6 @@
 #menuToggle input:checked~ul {
     transform: none;
 }
-
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
