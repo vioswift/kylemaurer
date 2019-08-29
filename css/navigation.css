@@ -1,8 +1,10 @@
 /* Main content */
 .main {
-    margin-left: 45vh;
+    margin-left: 50vh;
     /* Same as the width of the sidenav */
-    padding: 0px 10px;
+    padding: 10px 10px;
+    position: fixed;
+    float: left;
 }
 
 /* top navigation */
@@ -106,8 +108,8 @@
  * at the top left of the screen
  */
 #menu {
-    position: absolute;
-    width: 45vh;
+    position: fixed;
+    width: 50vh;
     height: 200vh;
     margin: -100px 0 0 -50px;
     padding-top: 125px;
@@ -190,7 +192,7 @@
     }
 
     #menu {
-        width: 63vh;
+        /* width: 58vh; */
     }
 
     .content {
@@ -201,10 +203,14 @@
 
 @media screen and (max-width: 812px) {
     #menu {
-        width: 58vh;
+        width: 110%;
     }
 
     #menu li a {
         font-size: 24px;
+    }
+
+    .main {
+        margin-left: 0px;
     }
 }
