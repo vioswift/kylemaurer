@@ -1,12 +1,3 @@
-/* Main content */
-.main {
-    margin-left: 50vh;
-    /* Same as the width of the sidenav */
-    padding: 10px 10px;
-    position: fixed;
-    float: left;
-}
-
 /* top navigation */
 .topnav {
     overflow: hidden;
@@ -109,8 +100,9 @@
  */
 #menu {
     position: fixed;
+    overflow-y: auto;
     width: 50vh;
-    height: 200vh;
+    height: 120%;
     margin: -100px 0 0 -50px;
     padding-top: 125px;
     padding-left: 0px;
@@ -165,10 +157,6 @@
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
-    #menu {
-        /* width: 60vh; */
-    }
-
     #menu li a {
         font-size: 14px;
     }
@@ -191,10 +179,6 @@
         display: block;
     }
 
-    #menu {
-        /* width: 58vh; */
-    }
-
     .content {
         margin-left: 0px;
         margin-top: 5px;
@@ -208,9 +192,5 @@
 
     #menu li a {
         font-size: 24px;
-    }
-
-    .main {
-        margin-left: 0px;
     }
 }
