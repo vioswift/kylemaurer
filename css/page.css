@@ -11,20 +11,23 @@
 }
 
 .newpage {
-    height: 100%;
+    height: auto;
     width: 100%;
+    min-height: 100%;
+    overflow: auto;
 }
 
-.newpage-red {
-    height: 100%;
-    width: 100%;
+.redbg {
     background-color: #8b0000;
 }
 
-.newpage-blue {
-    height: 100%;
-    width: 100%;
+.bluebg {
     background-color: #003366;
+}
+
+.remove-gap {
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 812px) {
