@@ -18,3 +18,9 @@ a {
 a:hover {
     color: tomato;
 }
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 25px;
+}
