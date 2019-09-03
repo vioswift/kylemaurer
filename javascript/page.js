@@ -1,6 +1,36 @@
-var observer = new IntersectionObserver(function(entries) {
-	if(entries[0].isIntersecting === true)
-		console.log('Element is fully visible in screen');
-}, { threshold: [1] });
+$.fn.isInViewport = function() {
+	var elementTop = $(this).offset().top;
+	var elementBottom = elementTop + $(this).outerHeight();
+  
+	var viewportTop = $(window).scrollTop();
+	var viewportBottom = viewportTop + $(window).height();
+  
+	return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+  
+//   $(window).on('resize scroll', function() {
+// 	$('h1').each(function() {
+// 		console.log('test2');
+// 	  if ($(this).isInViewport()) {
+// 		 $(document).prop('title', $(this).text);
+// 	  } 
+// 	});
+//   });
 
-observer.observe(document.querySelector("#programmingskills"));
+
+//   function handleHeaderState() {
+// 	console.log('test1sate');
+	
+// 	$('h1').each(function() {
+// 		console.log('test2');
+// 	  if ($(this).isInViewport()) {
+// 		 $(document).prop('title', $(this).text);
+// 	  } 
+// 	});
+// }
+
+// $('#main').on({
+//     scroll: handleHeaderState
+// });
+
+// handleHeaderState(); // on load
