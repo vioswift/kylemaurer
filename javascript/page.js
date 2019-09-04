@@ -1,36 +1,32 @@
-$.fn.isInViewport = function() {
+// checks if element is in the viewport and sets the page title as the elements text
+
+$.fn.isInViewport = function () {
 	var elementTop = $(this).offset().top;
 	var elementBottom = elementTop + $(this).outerHeight();
-  
+
 	var viewportTop = $(window).scrollTop();
 	var viewportBottom = viewportTop + $(window).height();
-  
+
 	return elementBottom > viewportTop && elementTop < viewportBottom;
-  };
-  
-//   $(window).on('resize scroll', function() {
-// 	$('h1').each(function() {
-// 		console.log('test2');
-// 	  if ($(this).isInViewport()) {
-// 		 $(document).prop('title', $(this).text);
-// 	  } 
-// 	});
-//   });
+};
+
+function handleHeaderState() {
+	var pageTitle = "Kyle Maurer | ";
 
 
-//   function handleHeaderState() {
-// 	console.log('test1sate');
-	
-// 	$('h1').each(function() {
-// 		console.log('test2');
-// 	  if ($(this).isInViewport()) {
-// 		 $(document).prop('title', $(this).text);
-// 	  } 
-// 	});
-// }
+	if ($('#landingPageTitle').isInViewport()) {
+		$(document).prop('title', pageTitle + 'I.T Professional');
+	} else {
+		$('h1').each(function () {
+			if ($(this).isInViewport()) {
+				$(document).prop('title', pageTitle + $(this).text());
+			}
+		});
+	}
+}
 
-// $('#main').on({
-//     scroll: handleHeaderState
-// });
+$('#main').on({
+	scroll: handleHeaderState
+});
 
-// handleHeaderState(); // on load
+handleHeaderState(); // on load
