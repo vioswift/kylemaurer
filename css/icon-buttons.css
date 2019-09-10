@@ -1,0 +1,23 @@
+.icon-button {
+    width: 180px;
+    height: 180px;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Darker background on mouse-over */
+.icon-button:hover {
+    background-color: RoyalBlue;
+}
+
+.icon-button i {
+    font-size: 108px;
+}
+
+.icon-button p {
+    font-size: 50px;
+}
