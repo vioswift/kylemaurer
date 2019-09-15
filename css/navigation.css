@@ -127,6 +127,17 @@
     transition: color 0.3s ease;
 }
 
+#menu .active {
+    text-decoration: none;
+    color: #232323;
+    background-color: darkred;
+
+    transition: color 0.3s ease;
+}
+#menu .active a {
+    color:white;
+}
+
 #menu a:hover {
     color: tomato;
 }
