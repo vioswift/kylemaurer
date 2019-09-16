@@ -177,6 +177,13 @@
     color: white;
 }
 
+.logo {
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    position: fixed;
+}
+
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
     #menu li a {
@@ -214,5 +221,9 @@
 
     #menu li a {
         font-size: 24px;
+    }
+
+    .logo {
+        display: none;
     }
 }

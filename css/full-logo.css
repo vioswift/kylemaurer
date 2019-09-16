@@ -1,0 +1,30 @@
+.full-logo {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.full-logo img {
+    width: 45%;
+    height: auto;
+}
+
+.full-logo h1 { 
+    font-size: 28px;
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.full-logo p {
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.full-logo hr {
+    border-top: 3px solid red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
