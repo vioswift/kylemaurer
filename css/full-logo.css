@@ -1,23 +1,28 @@
 .full-logo {
-    width: 250px;
-    height: 250px;
+    width: 265px;
+    height: auto;
     text-align: center;
+
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-50px 0 0 -300px;
 }
 
 .full-logo img {
-    width: 45%;
+    width: 40%;
     height: auto;
 }
 
 .full-logo h1 { 
-    font-size: 28px;
+    font-size: 2.5vw;
     padding: 0px;
     margin: 0px;
     letter-spacing: 2px;
 }
 
-.full-logo p {
-    font-size: 22px;
+.full-logo h2 {
+    font-size: 1.9vw;
     padding: 0px;
     margin: 0px;
     letter-spacing: 2px;
