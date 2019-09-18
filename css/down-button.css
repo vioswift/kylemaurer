@@ -7,6 +7,25 @@
     right: 250px;
     bottom: 10px;
     left: 0;
+    color: white;
+    font-size: 34px;
+    animation: MoveUpDown 2.5s linear infinite;
+}
+
+.down-button:hover {
+    color:red;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 812px) {
