@@ -20,11 +20,11 @@
 
     0%,
     100% {
-        bottom: 0;
+        bottom: 70px;
     }
 
     50% {
-        bottom: 10px;
+        bottom: 80px;
     }
 }
 
