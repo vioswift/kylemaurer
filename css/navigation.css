@@ -173,7 +173,7 @@
 }
 
 #menu li a:hover:not(.active) {
-    background-color: red;
+    background-color: darkblue;
     color: lightblue;
 }
 

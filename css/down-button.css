@@ -10,10 +10,12 @@
     color: white;
     font-size: 34px;
     animation: MoveUpDown 2.5s linear infinite;
+    transition: transform .2s;
 }
 
 .down-button:hover {
     color:red;
+    transform: scale(1.2);
 }
 
 @keyframes MoveUpDown {

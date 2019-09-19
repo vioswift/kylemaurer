@@ -1,0 +1,20 @@
+.projects {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects li {
+    float: left;
+    text-align: center;
+    margin: 10px;
+}
+
+.projects li h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.projects li .icons {
+    font-size: 24px;
+}
