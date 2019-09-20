@@ -64,7 +64,11 @@
     color: #ec4e43;
 }
 
+.icon-buttons .green a {
+    color: #7ac143;
+}
+
 .icon-buttons li a:hover {
-    color: red;
+    filter: brightness(140%);
     transform: scale(1.2);
 }

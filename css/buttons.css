@@ -6,11 +6,31 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
+    border-radius: 3px;
+    transition: transform .2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button.blue:link,
+.button.blue:visited {
+    background-color: darkblue;
+}
+
+.button.red:link,
+.button.red:visited {
+    background-color: darkred;
+}
+
+.button.black:link,
+.button.black:visited {
+    background-color: #211F1F;
 }
 
 .button:hover,
 .button:active {
-    background-color: red;
+    filter: brightness(140%);
 }
