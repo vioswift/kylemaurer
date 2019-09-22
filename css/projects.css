@@ -18,3 +18,9 @@
 .projects li .icons {
     font-size: 24px;
 }
+
+.projects li img {
+    width: 95px;
+    height: 95px;
+    padding: 5px;
+}
