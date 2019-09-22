@@ -7,10 +7,14 @@
     display: none;
 }
 
+.topnav img { 
+    padding: 5px;
+}
+
 /* side navigation */
 #menuToggle img {
-    width: 70px;
-    height: 70px;
+    width: 62px;
+    height: 62px;
     padding: 5px;
 }
 
