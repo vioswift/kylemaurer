@@ -25,18 +25,24 @@ h3 {
 footer {
     padding: 25px;
     color: #99aab5;
+    
 }
 
 footer img {
     width: 52px;
     height: auto;
     margin: 5px;
-    padding-bottom: 10px;
-    float: left;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    /* top: 50%; */
+}
+
+footer div {
+    /* display: inline; */
+    text-align:center; 
+    float: left;
 }
 
 footer small {
-    height: 52px;
+   
 }
