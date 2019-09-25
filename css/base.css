@@ -25,24 +25,26 @@ h3 {
 footer {
     padding: 25px;
     color: #99aab5;
-    
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 footer img {
     width: 52px;
     height: auto;
-    margin: 5px;
+    margin: 10px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    /* top: 50%; */
-}
-
-footer div {
-    /* display: inline; */
-    text-align:center; 
-    float: left;
+    display: inline-block;
+    text-align: left;
 }
 
 footer small {
-   
+    display: inline-block;
 }
