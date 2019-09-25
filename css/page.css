@@ -1,7 +1,7 @@
 /* Main content */
 .main {
-    margin-left: 50vh;
-    width: 100%;
+    margin-left: 300px;
+    width: 100% - 300px;
     height: 100%;
     /* Same as the width of the sidenav */
     position: fixed;
@@ -12,11 +12,10 @@
 
 .newpage {
     height: auto;
-    width: 97%;
+    width: 100%;
     min-height: 100%;
     overflow: auto;
     padding-bottom: 25px;
-    padding-right: 25px;
     margin-right: 50px;
 }
 
