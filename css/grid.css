@@ -9,6 +9,10 @@
     width: 90%;
 }
 
+.row.r100 {
+    width: 100%;
+}
+
 .column {
     display: flex; 
     flex-direction: column;

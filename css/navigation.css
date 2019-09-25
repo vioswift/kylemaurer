@@ -7,7 +7,7 @@
     display: none;
 }
 
-.topnav img { 
+.topnav img {
     padding: 5px;
 }
 
@@ -122,14 +122,12 @@
 #menu a {
     text-decoration: none;
     color: #232323;
-    transition: color 0.3s ease;
 }
 
 #menu .active {
     text-decoration: none;
     color: #232323;
     background-color: darkred;
-    transition: color 0.3s ease;
 }
 
 #menu .active a {
@@ -173,6 +171,11 @@
 #menu li a:hover:not(.active) {
     background-color: darkblue;
     color: lightblue;
+    padding-right: 25px;
+    -webkit-transition: padding-right 1s;
+    -moz-transition: padding-right 1s;
+    -o-transition: padding-right 1s;
+    transition: padding-right 1s;
 }
 
 .logo {
