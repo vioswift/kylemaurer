@@ -50,3 +50,7 @@ footer img {
 footer small {
     display: inline-block;
 }
+
+iframe {
+    right: 30%;
+}

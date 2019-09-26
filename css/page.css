@@ -11,8 +11,8 @@
 }
 
 .newpage {
-    height: auto;
     width: 100%;
+    height: auto;
     min-height: 100%;
     overflow: auto;
     padding-bottom: 25px;
@@ -25,16 +25,6 @@
 
 .bluebg {
     background-color: #003366;
-}
-
-.blur-image {
-    width: 100%;
-    height: auto;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px) brightness(30%);
 }
 
 .remove-gap {
