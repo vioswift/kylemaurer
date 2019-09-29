@@ -20,6 +20,11 @@
     flex: 1;
 }
 
+.col.c0 {
+    flex-basis: 0;
+    flex: 0; 
+}
+
 @media screen and (max-width: 812px) {
     .row {
         width: 100%;
