@@ -27,9 +27,6 @@ h3 {
 footer {
     padding: 25px;
     color: #99aab5;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -49,8 +46,4 @@ footer img {
 
 footer small {
     display: inline-block;
-}
-
-iframe {
-    right: 30%;
 }

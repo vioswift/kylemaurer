@@ -41,7 +41,6 @@
     /* hide this */
     z-index: 2;
     /* and place it over the hamburger */
-
     -webkit-touch-callout: none;
 }
 
@@ -101,7 +100,6 @@
  * at the top left of the screen
  */
 #menu {
-    position: fixed;
     position: absolute;
     overflow-y: auto;
     width: 300px;
@@ -128,7 +126,7 @@
 #menu .active {
     text-decoration: none;
     color: #232323;
-    background-color: darkred;
+    background-color: #D3182F;
 }
 
 #menu .active a {
@@ -141,7 +139,7 @@
 }
 
 #menu a:hover {
-    color: tomato;
+    color: #D3182F;
 }
 
 /*
@@ -179,7 +177,7 @@
 }
 
 #menu li a:hover:not(.active) {
-    background-color: darkblue;
+    background-color: #152F4F;
     color: lightblue;
     padding-right: 55px;
     -webkit-transition: padding-right 1s;
@@ -208,7 +206,6 @@
         display: block;
     }
 
-    /* side navigation */
     #menuToggle {
         top: 20px;
         left: 20px;
@@ -228,6 +225,7 @@
 @media screen and (max-width: 812px) {
     #menu {
         width: 110%;
+        position: fixed;
     }
 
     #menu li a {

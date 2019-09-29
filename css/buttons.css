@@ -17,12 +17,12 @@
 
 .button.blue:link,
 .button.blue:visited {
-    background-color: darkblue;
+    background-color: #152F4F;
 }
 
 .button.red:link,
 .button.red:visited {
-    background-color: darkred;
+    background-color: #D3182F;
 }
 
 .button.black:link,

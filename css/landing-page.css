@@ -3,16 +3,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 350px;
 }
 
-.landing-group div {
-    justify-content: center;
-    align-items: center;
-    margin:auto;
-}
-
-/* .blur-image  */
 .landing-bg {
     background-image: url("../images/computer-background.jpg");
     height: 100%; 
@@ -29,25 +25,27 @@
 .newpage.landing-page {
     height: 100%;
     overflow: hidden;
+    padding-bottom: 0;
 }
 
 .full-logo {
-    width: 265px;
+    width: 100%;
     height: 250px;
     text-align: center;
 }
 
 .full-logo img {
-    width: 35%;
+    width: 100px;
     height: auto;
     padding: 5px;
 }
 
 .full-logo h1 {
-    font-size: 32px;
+    font-size: 35px;
     padding: 0px;
     margin: 0px;
     letter-spacing: 2px;
+    font-family: "Ebrima", "Arial";
 }
 
 .full-logo h2 {
@@ -55,16 +53,19 @@
     padding: 0px;
     margin: 0px;
     letter-spacing: 2px;
+    font-weight: normal;
+    font-family: "Bookman Old Style", "Times New Roman";
 }
 
 .full-logo hr {
-    border-top: 3px solid red;
+    border: 2px solid #D3182F;
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 258px;
 }
 
 .quote {
-    width: 300px;
+    width: 100%;
     height: 50px;
     text-align: center;
     left: 0;
@@ -81,7 +82,7 @@
 }
 
 .down-button:hover {
-    color: red;
+    color: #D3182F;
     transform: scale(1.2);
 }
 
@@ -98,15 +99,7 @@
 }
 
 @media screen and (max-width: 812px) {
-    .full-logo {
-        right: 0px;
-    }
-
-    .quote {
-        right: 0px;
-    }
-
-    .down-button {
-        right: 0px;
-    }
+    /* .landing-group {
+        transform: translate(-78%, -50%);
+    } */
 }

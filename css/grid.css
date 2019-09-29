@@ -13,9 +13,15 @@
     width: 100%;
 }
 
-.column {
+.col {
     display: flex; 
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+}
+
+@media screen and (max-width: 812px) {
+    .row {
+        width: 100%;
+    }
 }

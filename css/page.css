@@ -20,11 +20,11 @@
 }
 
 .redbg {
-    background-color: #8b0000;
+    background-color: #D3182F;
 }
 
 .bluebg {
-    background-color: #003366;
+    background-color: #152F4F;
 }
 
 .remove-gap {
@@ -35,6 +35,6 @@
 @media screen and (max-width: 812px) {
     .main {
         margin-left: 0;
-
+        width: 100%;
     }
 }
