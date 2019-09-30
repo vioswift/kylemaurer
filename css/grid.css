@@ -6,11 +6,15 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 65%;
 }
 
 .row.r100 {
     width: 100%;
+}
+
+.row.r110 {
+    width: 110%;
 }
 
 .col {
