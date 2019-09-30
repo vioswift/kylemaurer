@@ -22,3 +22,7 @@
 .projects li img {
     width: 85px;
 }
+
+.projects li small {
+    color: black;
+}

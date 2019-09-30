@@ -29,6 +29,10 @@
     flex: 0; 
 }
 
+.col.center {
+    align-items: center;
+}
+
 @media screen and (max-width: 812px) {
     .row {
         width: 100%;

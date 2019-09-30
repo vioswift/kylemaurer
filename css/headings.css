@@ -35,3 +35,16 @@
 .heading-line.red:after {
     background-color: #D3182F;
 }
+
+.heading-line.white:before,
+.heading-line.white:after {
+    background-color: #ededed;
+}
+
+.heading.blue {
+    color: #152F4F;
+}
+
+.heading.red {
+    color: #D3182F;
+}
