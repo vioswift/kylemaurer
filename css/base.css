@@ -25,6 +25,7 @@ h3 {
 footer {
     height: 90px;
     line-height: 90px;
+    border-top: 5px solid #D3182F;
 }
 
 footer img {
