@@ -23,7 +23,7 @@
     position: fixed;
     top: 50px;
     left: 50px;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -207,7 +207,7 @@
     }
 
     #menuToggle {
-        top: 20px;
+        top: 25px;
         left: 20px;
     }
 

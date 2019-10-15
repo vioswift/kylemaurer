@@ -72,3 +72,11 @@
     filter: brightness(140%);
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 812px) {
+    .icon-buttons li a {
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+    }
+}
