@@ -1,0 +1,13 @@
+.searchInput[type=text] {
+	width: 100%;
+	padding: 8px 20px;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+
+.searchInput[type=text]:focus {
+	border: 3px solid #D3182F;
+}
