@@ -65,19 +65,34 @@
 }
 
 .tab-button {
-    background-color: #555;
+    background-color: transparent;
     color: white;
     float: left;
-    border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
     width: calc(100% / 6);
+    border: none;
+    transition: all 0.7s;
+}
+
+.tab-button.active {
+    background-color: #D3182F;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .tab-button:hover {
+    color: #232323;
+    background-color: #ccc;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.tab-button.active:hover {
     background-color: #D3182F;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 812px) {

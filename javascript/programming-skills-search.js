@@ -18,10 +18,11 @@ function searchText() {
     }
 }
 
-function searchCategory(category) {
+function searchCategory(buttonId, category) {
     var filter, ul, li, a;
     var searchInput = document.getElementById("searchInput");
     
+    toggleClasses(buttonId);
     searchInput.value = '';
 
     filter = category.toUpperCase();
@@ -36,5 +37,39 @@ function searchCategory(category) {
         } else {
             li[count].style.display = "none";
         }
+    }
+}
+
+function toggleClasses(button) {
+    var buttons = document.getElementById("tabbed-buttons").querySelectorAll(".tab-button"); 
+
+    for (var counter = 0; counter < buttons.length; counter++) {
+        buttons[counter].classList.remove("active");
+    }
+
+    button.classList.add("active"); 
+}
+
+// WORKING ON THIS
+function fadeAwayElement(element) {
+    // let box = document.getElementById('icon-buttons');
+    let box = element;
+
+    if (box.classList.contains('hidden')) {
+        box.classList.remove('hidden');
+        
+        setTimeout(function () {
+            box.classList.remove('visuallyhidden');
+        }, 20);
+    } else {
+        box.classList.add('visuallyhidden');    
+
+        box.addEventListener('transitionend', function(e) {
+            box.classList.add('hidden');
+        }, {
+            capture: false,
+            once: true,
+            passive: false
+        });
     }
 }

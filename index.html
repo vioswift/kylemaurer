@@ -109,12 +109,12 @@
                 <h1 class="heading-line red">About</h1>
                 <div class="col" style="text-align: center">
                     <p>
-                        I have a serious passion software development, I enjoy solving problems and
+                        I have a serious passion for software development, I enjoy solving problems and
                         making things as simple and efficient as possible!
                     </p>
                     <p>
                         I have completed my University degree in a <strong>Bachelor of Information Communication
-                            Technology</strong> and graduated with a <strong>Distinction</strong>.
+                        Technology</strong> and graduated with a <strong>Distinction</strong>.
                     </p>
                     <p>
                         I enjoy working in front-end and back-end web development, I also enjoy coding software for the desktop, I just love software development!
@@ -186,13 +186,13 @@
                 <h1 class="heading-line red">Programming Skills</h1>
                 <div class="row r100">
                     <div class="col">
-                        <div class="tabbed-buttons">
-                            <button class="tab-button" onclick="searchCategory('')">All</button>
-                            <button class="tab-button" onclick="searchCategory('front-end')">Front-end</button>
-                            <button class="tab-button" onclick="searchCategory('back-end')">Back-end</button>
-                            <button class="tab-button" onclick="searchCategory('frameworks')">Frameworks</button>
-                            <button class="tab-button" onclick="searchCategory('notations')">Notations</button>
-                            <button class="tab-button" onclick="searchCategory('cms')">CMS</button>
+                        <div class="tabbed-buttons" id="tabbed-buttons">
+                            <button class="tab-button active" onclick="searchCategory(this,'')">All</button>
+                            <button class="tab-button" onclick="searchCategory(this,'front-end')">Front-end</button>
+                            <button class="tab-button" onclick="searchCategory(this,'back-end')">Back-end</button>
+                            <button class="tab-button" onclick="searchCategory(this,'frameworks')">Frameworks</button>
+                            <button class="tab-button" onclick="searchCategory(this,'notations')">Notations</button>
+                            <button class="tab-button" onclick="searchCategory(this,'cms')">CMS</button>
                         </div>
 
                         <input type="text" class="searchInput margin-bottom" id="searchInput" onkeyup="searchText()" placeholder="Search for a language...">               
@@ -200,10 +200,49 @@
                 </div>
 
                 <ul id="icon-buttons" class="icon-buttons">
+                    <!-- front-end -->
                     <li class="red">
+                        <a href="https://en.wikipedia.org/wiki/HTML" id="front-end" target="_blank">
+                            <i class="devicon-html5-plain"></i>
+                            <p>HTML</p>
+                        </a>
+                    </li>
+                    <li class="lightblue">
                         <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3" id="front-end" target="_blank">
                             <i class="devicon-css3-plain"></i>
                             <p>CSS</p>
+                        </a>
+                    </li>
+                    <li class="yellow">
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" id="front-end" target="_blank">
+                            <i class="devicon-javascript-plain"></i>
+                            <p>JavaScript</p>
+                        </a>
+                    </li>
+                    <li class="purple">
+                        <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" id="front-end" target="_blank">
+                            <i class="devicon-sass-original"></i>
+                            <p>SASS</p>
+                        </a>
+                    </li>
+
+                    <!-- back-end -->
+                    <li class="blue">
+                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" id="back-end" target="_blank">
+                            <i class="devicon-c-plain"></i>
+                            <p>c</p>
+                        </a>
+                    </li>
+                    <li class="blue">
+                        <a href="https://en.wikipedia.org/wiki/C%2B%2B" id="back-end" target="_blank">
+                            <i class="devicon-cplusplus-plain"></i>
+                            <p>C++</p>
+                        </a>
+                    </li>
+                    <li class="blue">
+                        <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" id="back-end" target="_blank">
+                            <i class="devicon-csharp-plain"></i>
+                            <p>C#</p>
                         </a>
                     </li>
                     <li class="darkblue">
@@ -212,164 +251,85 @@
                             <p>Java</p>
                         </a>
                     </li>
+                    <li class="purple">
+                        <a href="https://en.wikipedia.org/wiki/PHP" id="back-end" target="_blank">
+                            <i class="devicon-php-plain"></i>
+                            <p>PHP</p>
+                        </a>
+                    </li>
+                    <li class="lightblue">
+                        <a href="https://en.wikipedia.org/wiki/SQL" id="back-end" target="_blank">
+                            <i class="devicon-mysql-plain"></i>
+                            <p>SQL</p>
+                        </a>
+                    </li>
+                    <li class="lightblue">
+                        <a href="https://en.wikipedia.org/wiki/Transact-SQL" id="back-end" target="_blank">
+                            <i class="devicon-windows8-original"></i>
+                            <p>T-SQL</p>
+                        </a>
+                    </li>
+                    <li class="orange">
+                        <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" id="back-end" target="_blank">
+                            <i class="devicon-swift-plain"></i>
+                            <p>Swift 4</p>
+                        </a>
+                    </li>
+
+                    <!-- frameworks -->
+                    <li class="blue">
+                        <a href="https://en.wikipedia.org/wiki/ASP.NET" id="frameworks" target="_blank">
+                            <i class="devicon-dot-net-plain"></i>
+                            <p>ASP.NET</p>
+                        </a>
+                    </li>
+                    <li class="orange">
+                        <a href="https://en.wikipedia.org/wiki/Laravel" id="frameworks" target="_blank">
+                            <i class="devicon-laravel-plain"></i>
+                            <p>Laravel</p>
+                        </a>
+                    </li>
+                    <li class="lightblue">
+                        <a href="https://en.wikipedia.org/wiki/React_(web_framework)" id="frameworks" target="_blank">
+                            <i class="devicon-react-plain"></i>
+                            <p>REACT</p>
+                        </a>
+                    </li>
+                    <li class="purple">
+                        <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" id="frameworks" target="_blank">
+                            <i class="devicon-bootstrap-plain"></i>
+                            <p>Bootstrap 4</p>
+                        </a>
+                    </li>
+
+                    <!-- notations -->
+                    <li class="yellow">
+                        <a href="https://en.wikipedia.org/wiki/JSON" id="notations" target="_blank">
+                            <i class="devicon-javascript-plain"></i>
+                            <p>JSON</p>
+                        </a>
+                    </li>
+
+                    <!-- CMS -->
+                    <li class="lightblue">
+                        <a href="https://en.wikipedia.org/wiki/WordPress" id="cms" target="_blank">
+                            <i class="fab fa-wordpress-simple"></i>
+                            <p>WordPress</p>
+                        </a>
+                    </li>
+                    <li class="green">
+                        <a href="https://en.wikipedia.org/wiki/Joomla" id="cms" target="_blank">
+                            <i class="fab fa-joomla"></i>
+                            <p>Joomla!</p>
+                        </a>
+                    </li>
+                    <li class="lightblue">
+                        <a href="https://en.wikipedia.org/wiki/Weebly" id="cms" target="_blank">
+                            <i class="fab fa-weebly"></i>
+                            <p>Weebly</p>
+                        </a>
+                    </li>
                 </ul>
-
-
-                <div class="row r100">
-                    <div class="col">
-                        <h2>Front-end</h2>
-                        <ul class="icon-buttons">
-                            <li class="red">
-                                <a href="https://en.wikipedia.org/wiki/HTML" id="front-end" target="_blank">
-                                    <i class="devicon-html5-plain"></i>
-                                    <p>HTML</p>
-                                </a>
-                            </li>
-                            <li class="lightblue">
-                                <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3" id="front-end" target="_blank">
-                                    <i class="devicon-css3-plain"></i>
-                                    <p>CSS</p>
-                                </a>
-                            </li>
-                            <li class="yellow">
-                                <a href="https://en.wikipedia.org/wiki/JavaScript" id="front-end" target="_blank">
-                                    <i class="devicon-javascript-plain"></i>
-                                    <p>JavaScript</p>
-                                </a>
-                            </li>
-                            <li class="purple">
-                                <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" id="front-end" target="_blank">
-                                    <i class="devicon-sass-original"></i>
-                                    <p>SASS</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row r100">
-                    <div class="col">
-                        <h2>Back-end</h2>
-                        <ul class="icon-buttons">
-                            <li class="blue">
-                                <a href="https://en.wikipedia.org/wiki/C_(programming_language)" id="back-end" target="_blank">
-                                    <i class="devicon-c-plain"></i>
-                                    <p>c</p>
-                                </a>
-                            </li>
-                            <li class="blue">
-                                <a href="https://en.wikipedia.org/wiki/C%2B%2B" id="back-end" target="_blank">
-                                    <i class="devicon-cplusplus-plain"></i>
-                                    <p>C++</p>
-                                </a>
-                            </li>
-                            <li class="blue">
-                                <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" id="back-end" target="_blank">
-                                    <i class="devicon-csharp-plain"></i>
-                                    <p>C#</p>
-                                </a>
-                            </li>
-                            <li class="darkblue">
-                                <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" id="back-end" target="_blank">
-                                    <i class="devicon-java-plain"></i>
-                                    <p>Java</p>
-                                </a>
-                            </li>
-                            <li class="purple">
-                                <a href="https://en.wikipedia.org/wiki/PHP" id="back-end" target="_blank">
-                                    <i class="devicon-php-plain"></i>
-                                    <p>PHP</p>
-                                </a>
-                            </li>
-                            <li class="lightblue">
-                                <a href="https://en.wikipedia.org/wiki/SQL" id="back-end" target="_blank">
-                                    <i class="devicon-mysql-plain"></i>
-                                    <p>SQL</p>
-                                </a>
-                            </li>
-                            <li class="lightblue">
-                                <a href="https://en.wikipedia.org/wiki/Transact-SQL" id="back-end" target="_blank">
-                                    <i class="devicon-windows8-original"></i>
-                                    <p>T-SQL</p>
-                                </a>
-                            </li>
-                            <li class="orange">
-                                <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" id="back-end" target="_blank">
-                                    <i class="devicon-swift-plain"></i>
-                                    <p>Swift 4</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row r100">
-                    <div class="col">
-                        <h2>Frameworks</h2>
-                        <ul class="icon-buttons">
-                            <li class="blue">
-                                <a href="https://en.wikipedia.org/wiki/ASP.NET" id="frameworks" target="_blank">
-                                    <i class="devicon-dot-net-plain"></i>
-                                    <p>ASP.NET</p>
-                                </a>
-                            </li>
-                            <li class="orange">
-                                <a href="https://en.wikipedia.org/wiki/Laravel" id="frameworks" target="_blank">
-                                    <i class="devicon-laravel-plain"></i>
-                                    <p>Laravel</p>
-                                </a>
-                            </li>
-                            <li class="lightblue">
-                                <a href="https://en.wikipedia.org/wiki/React_(web_framework)" id="frameworks" target="_blank">
-                                    <i class="devicon-react-plain"></i>
-                                    <p>REACT</p>
-                                </a>
-                            </li>
-                            <li class="purple">
-                                <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" id="frameworks" target="_blank">
-                                    <i class="devicon-bootstrap-plain"></i>
-                                    <p>Bootstrap 4</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row r100">
-                    <div class="col">
-                        <h2>Notations</h2>
-                        <ul class="icon-buttons">
-                            <li class="yellow">
-                                <a href="https://en.wikipedia.org/wiki/JSON" id="notations" target="_blank">
-                                    <i class="devicon-javascript-plain"></i>
-                                    <p>JSON</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row r100">
-                    <div class="col">
-                        <h2>CMS</h2>
-                        <ul class="icon-buttons">
-                            <li class="lightblue">
-                                <a href="https://en.wikipedia.org/wiki/WordPress" id="cms" target="_blank">
-                                    <i class="fab fa-wordpress-simple"></i>
-                                    <p>WordPress</p>
-                                </a>
-                            </li>
-                            <li class="green">
-                                <a href="https://en.wikipedia.org/wiki/Joomla" id="cms" target="_blank">
-                                    <i class="fab fa-joomla"></i>
-                                    <p>Joomla!</p>
-                                </a>
-                            </li>
-                            <li class="lightblue">
-                                <a href="https://en.wikipedia.org/wiki/Weebly" id="cms" target="_blank">
-                                    <i class="fab fa-weebly"></i>
-                                    <p>Weebly</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="newpage bluebg">
