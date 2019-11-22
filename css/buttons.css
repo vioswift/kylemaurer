@@ -1,35 +1,56 @@
 .button:link,
 .button:visited {
-    background-color: #f44336;
+    background-color: transparent;
     color: white;
     padding: 14px 25px;
     margin-top: 5px;
+    margin-right: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;  
-    border-radius: 3px;
-    transition: transform .2s;
+    border-radius: 5px;
     min-width: 100px;
+    border: 2px solid white;
+    transition: all .6s;
 }
 
 .button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.button.blue:link,
-.button.blue:visited {
+.button.blue:link:hover,
+.button.blue:visited:hover {
     background-color: #152F4F;
+    border: 2px solid #152F4F;
+    font-weight: bold;
+    letter-spacing: 2px;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
 
-.button.red:link,
-.button.red:visited {
+.button.red:link:hover,
+.button.red:visited:hover {
     background-color: #D3182F;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
 
-.button.black:link,
-.button.black:visited {
-    background-color: #211F1F;
+.button.black:link:hover,
+.button.black:visited:hover {
+    background-color: white;
+    color: #211F1F;
+    border: 2px solid white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
 
 .button:hover,
