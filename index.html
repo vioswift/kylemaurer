@@ -186,14 +186,25 @@
                 <h1 class="heading-line red">Programming Skills</h1>
                 <div class="row r100">
                     <div class="col">
+                        <!-- tabbed buttons -->
                         <div class="tabbed-buttons" id="tabbed-buttons">
-                            <button class="tab-button active" onclick="searchCategory(this,'')">All</button>
-                            <button class="tab-button" onclick="searchCategory(this,'front-end')">Front-end</button>
-                            <button class="tab-button" onclick="searchCategory(this,'back-end')">Back-end</button>
-                            <button class="tab-button" onclick="searchCategory(this,'frameworks')">Frameworks</button>
-                            <button class="tab-button" onclick="searchCategory(this,'notations')">Notations</button>
-                            <button class="tab-button" onclick="searchCategory(this,'cms')">CMS</button>
+                            <button class="tab-button active" onclick="searchCategory('');toggleClasses(this)">All</button>
+                            <button class="tab-button" onclick="searchCategory('front-end');toggleClasses(this)">Front-end</button>
+                            <button class="tab-button" onclick="searchCategory('back-end');toggleClasses(this)">Back-end</button>
+                            <button class="tab-button" onclick="searchCategory('frameworks');toggleClasses(this)">Frameworks</button>
+                            <button class="tab-button" onclick="searchCategory('notations');toggleClasses(this)">Notations</button>
+                            <button class="tab-button" onclick="searchCategory('cms');toggleClasses(this)">CMS</button>
                         </div>
+
+                        <!-- list -->
+                        <select id="selectList" onchange="selectChange(this)">
+                            <option value="" selected>All</option>
+                            <option value="Front-end">Front-end</option>
+                            <option value="Back-end">Back-end</option>
+                            <option value="Frameworks">Frameworks</option>
+                            <option value="Notations">Notations</option>
+                            <option value="CMS">CMS</option>
+                        </select>  
 
                         <input type="text" class="searchInput margin-bottom" id="searchInput" onkeyup="searchText()" placeholder="Search for a language...">               
                     </div>

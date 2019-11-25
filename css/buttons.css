@@ -97,6 +97,11 @@
 
 @media screen and (max-width: 812px) {
     .tab-button {
-        width: 130px;
+        display: none;
+        /* width: 130px; */
+    }
+
+    .selectList {
+        display: visible;
     }
 }

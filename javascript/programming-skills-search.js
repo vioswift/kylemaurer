@@ -18,11 +18,10 @@ function searchText() {
     }
 }
 
-function searchCategory(buttonId, category) {
+function searchCategory(category) {
     var filter, ul, li, a;
     var searchInput = document.getElementById("searchInput");
     
-    toggleClasses(buttonId);
     searchInput.value = '';
 
     filter = category.toUpperCase();
@@ -48,6 +47,12 @@ function toggleClasses(button) {
     }
 
     button.classList.add("active"); 
+}
+
+function selectChange(selectBox) {
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+
+    searchCategory(selectedValue)
 }
 
 // WORKING ON THIS
