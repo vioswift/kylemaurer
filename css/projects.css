@@ -32,6 +32,17 @@
     letter-spacing: 1px;
 }
 
+.projects li:hover .project-year,
+.scripts li:hover .project-year {
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    font-size: 15px;
+    font-weight: bold;
+    color: #D3182F;
+}
+
 .projects li h2 {
     text-transform: uppercase;
     margin-bottom: 0;

@@ -108,16 +108,27 @@
             <div class="container">
                 <h1 class="heading-line red">About</h1>
                 <div class="col" style="text-align: center">
+                    <!-- <div class="row">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="300" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <polygon class="hex" points="300,150 225,280 75,280 0,150 75,20 225,20" fill="#fa5" transform="translate(10)"></polygon>
+                                <text id="gText_11081308229940" name="-1" x="160" y="160" font="Arial" rotate="0" horizAnchor="middle" vertAnchor="middle" scale="4,4" width="1" stroke="0x000000">
+                                        &#xf3fd;
+                                        &#xf040;
+                                </text>
+                            </svg>
+                    </div> -->
+
                     <p>
                         I have a serious passion for software development, I enjoy solving problems and
                         making things as simple and efficient as possible!
                     </p>
                     <p>
                         I have completed my University degree in a <strong>Bachelor of Information Communication
-                        Technology</strong> and graduated with a <strong>Distinction</strong>.
+                            Technology</strong> and graduated with a <strong>Distinction</strong>.
                     </p>
                     <p>
-                        I enjoy working in front-end and back-end web development, I also enjoy coding software for the desktop, I just love software development!
+                        I enjoy working in front-end and back-end web development, I also enjoy coding software for the
+                        desktop, I just love software development!
                     </p>
                 </div>
             </div>
@@ -188,11 +199,16 @@
                     <div class="col">
                         <!-- tabbed buttons -->
                         <div class="tabbed-buttons" id="tabbed-buttons">
-                            <button class="tab-button active" onclick="searchCategory('');toggleClasses(this)">All</button>
-                            <button class="tab-button" onclick="searchCategory('front-end');toggleClasses(this)">Front-end</button>
-                            <button class="tab-button" onclick="searchCategory('back-end');toggleClasses(this)">Back-end</button>
-                            <button class="tab-button" onclick="searchCategory('frameworks');toggleClasses(this)">Frameworks</button>
-                            <button class="tab-button" onclick="searchCategory('notations');toggleClasses(this)">Notations</button>
+                            <button class="tab-button active"
+                                onclick="searchCategory('');toggleClasses(this)">All</button>
+                            <button class="tab-button"
+                                onclick="searchCategory('front-end');toggleClasses(this)">Front-end</button>
+                            <button class="tab-button"
+                                onclick="searchCategory('back-end');toggleClasses(this)">Back-end</button>
+                            <button class="tab-button"
+                                onclick="searchCategory('frameworks');toggleClasses(this)">Frameworks</button>
+                            <button class="tab-button"
+                                onclick="searchCategory('notations');toggleClasses(this)">Notations</button>
                             <button class="tab-button" onclick="searchCategory('cms');toggleClasses(this)">CMS</button>
                         </div>
 
@@ -204,9 +220,10 @@
                             <option value="Frameworks">Frameworks</option>
                             <option value="Notations">Notations</option>
                             <option value="CMS">CMS</option>
-                        </select>  
+                        </select>
 
-                        <input type="text" class="searchInput margin-bottom" id="searchInput" onkeyup="searchText()" placeholder="Search for a language...">               
+                        <input type="text" class="searchInput margin-bottom" id="searchInput" onkeyup="searchText()"
+                            placeholder="Search for a language...">
                     </div>
                 </div>
 
@@ -219,7 +236,8 @@
                         </a>
                     </li>
                     <li class="lightblue">
-                        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3" id="front-end" target="_blank">
+                        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3" id="front-end"
+                            target="_blank">
                             <i class="devicon-css3-plain"></i>
                             <p>CSS</p>
                         </a>
@@ -231,7 +249,8 @@
                         </a>
                     </li>
                     <li class="purple">
-                        <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" id="front-end" target="_blank">
+                        <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" id="front-end"
+                            target="_blank">
                             <i class="devicon-sass-original"></i>
                             <p>SASS</p>
                         </a>
@@ -251,13 +270,15 @@
                         </a>
                     </li>
                     <li class="blue">
-                        <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" id="back-end" target="_blank">
+                        <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" id="back-end"
+                            target="_blank">
                             <i class="devicon-csharp-plain"></i>
                             <p>C#</p>
                         </a>
                     </li>
                     <li class="darkblue">
-                        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" id="back-end" target="_blank">
+                        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" id="back-end"
+                            target="_blank">
                             <i class="devicon-java-plain"></i>
                             <p>Java</p>
                         </a>
@@ -281,7 +302,8 @@
                         </a>
                     </li>
                     <li class="orange">
-                        <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" id="back-end" target="_blank">
+                        <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" id="back-end"
+                            target="_blank">
                             <i class="devicon-swift-plain"></i>
                             <p>Swift 4</p>
                         </a>
@@ -307,7 +329,8 @@
                         </a>
                     </li>
                     <li class="purple">
-                        <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" id="frameworks" target="_blank">
+                        <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" id="frameworks"
+                            target="_blank">
                             <i class="devicon-bootstrap-plain"></i>
                             <p>Bootstrap 4</p>
                         </a>
@@ -464,7 +487,7 @@
                             <h2 class="heading red">Kyle Maurer</h2>
                             <p>Portfolio and resume website.</p>
                             <small>
-                                - 2019 - <br />
+                                <span class="project-year">- 2019 -</span> <br />
                                 <em><strong>Project Type: Personal</strong></em>
                             </small>
                             <p class="icons">
@@ -482,7 +505,7 @@
                             <h2 class="heading red">Clock-Duration</h2>
                             <p>Date and time duration calculator.</p>
                             <small>
-                                - 2019 - <br />
+                                <span class="project-year">- 2019 -</span> <br />
                                 <em><strong>Project Type: Personal</strong></em>
                             </small>
                             <p class="icons">
@@ -502,7 +525,7 @@
                             <h2 class="heading red">Tic-Tac-Toe</h2>
                             <p>Play any board size with A.I.</p>
                             <small>
-                                - 2018 - <br />
+                                <span class="project-year">- 2018 -</span> <br />
                                 <em><strong>Project Type: University</strong></em>
                             </small>
                             <p class="icons">
@@ -533,7 +556,8 @@
             </div>
         </div>
         <div class="newpage bluebg">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
                 <path d="M0 0 L50 100 L100 0 Z" fill="#232323"></path>
             </svg>
 

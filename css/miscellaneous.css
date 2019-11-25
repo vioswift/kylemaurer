@@ -14,3 +14,7 @@
 .visuallyhidden {
     opacity: 0;
 }  
+
+svg text {
+    font-family: FontAwesome;
+}
