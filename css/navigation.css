@@ -23,7 +23,7 @@
     position: fixed;
     top: 50px;
     left: 50px;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -116,6 +116,7 @@
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    border-right: 6px solid #D3182F;
 }
 
 #menu a {
@@ -207,7 +208,7 @@
     }
 
     #menuToggle {
-        top: 20px;
+        top: 25px;
         left: 20px;
     }
 
