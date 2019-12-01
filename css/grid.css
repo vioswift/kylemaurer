@@ -17,6 +17,10 @@
     width: 110%;
 }
 
+.row.rauto {
+    width: auto;
+}
+
 .col {
     display: flex; 
     flex-direction: column;
