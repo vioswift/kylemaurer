@@ -1,9 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    background: #232323;
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
+    background: linear-gradient(90deg, #232323 20px, transparent 1%) center, linear-gradient(#232323 20px, transparent 1%) center, #2c2f33; /* dotted background */
+    background-size: 22px 22px; /* size needed for dotted background */
 }
 
 h1 {
