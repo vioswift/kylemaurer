@@ -27,6 +27,11 @@
     background-color: #152F4F;
 }
 
+.bluegradientbg {
+    background: rgb(34,77,130);
+    background: linear-gradient(0deg, rgba(34,77,130,1) 0%, rgba(21,47,79,1) 100%);
+}
+
 .remove-gap {
     margin: 0;
     padding: 0;
