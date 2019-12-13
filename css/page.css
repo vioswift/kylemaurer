@@ -43,3 +43,10 @@
         width: 100%;
     }
 }
+
+@media screen and (max-device-width : 1024px) {
+    .main {
+        margin-left: 0;
+        width: calc(100%);
+    }
+}

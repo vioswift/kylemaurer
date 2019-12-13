@@ -2,7 +2,7 @@ var isMobile;
 var hamburgerToggle;
 
 function onScreenSizeChange() {
-    isMobile = window.matchMedia && window.matchMedia('(max-device-width: 700px)').matches || screen.width <= 700;
+    isMobile = window.matchMedia && window.matchMedia('(max-device-width: 1024px)').matches || screen.width <= 1024;
     hamburgerToggle = document.getElementById("hamburgerToggle");
 
     if (isMobile) {
