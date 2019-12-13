@@ -9,9 +9,11 @@
     float: left;
     text-align: center;
     padding: 10px;
+    margin: 5px;
     width: 400px;
     height: 400px;
     border-radius: 5px;
+    background-color: #2c2f3357;
 }
 
 .scripts li:hover,
@@ -72,9 +74,11 @@
     float: left;
     padding: 25px;
     padding-top: 0px;
+    margin: 5px;
     width: 300px;
     height: 150px;
     border-radius: 5px;
+    background-color: #2c2f3357;
 }
 
 @media screen and (max-width: 812px) {

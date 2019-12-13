@@ -12,6 +12,10 @@
     width: 25px;
     text-align: center;
     color: #C0D9D9;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
 }
 
 .infoBox .text {
@@ -21,6 +25,26 @@
     color: #4A777A;
     height: 20px;
     width: 225px;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+
+.infoBox:hover .single-character,
+.infoBox:hover .text {
+    filter: brightness(110%);
+}
+
+.infoBox:hover .single-character {
+    font-size: 19px;
+    width: 10px;
+    padding-left: 20px;
+}
+
+.infoBox:hover .text {
+    width: 245px;
 }
 
 .infoBox.red .single-character {
@@ -31,4 +55,19 @@
 .infoBox.red .text {
     background-color: #FFA07A;
     color: #B22222;
+}
+
+@media screen and (max-width: 320px) {
+    .infoBox .single-character {
+        padding: 20px;
+    }
+    
+    .infoBox {
+        margin: 5px;
+        width: 300px;
+    }
+
+    .infoBox .text {
+        width: 250px;
+    }
 }

@@ -238,6 +238,27 @@
     }
 }
 
-@media (min-width: 1281px) {
+@media screen and (max-device-width : 1024px) {
+    .topnav {
+        display: block;
+    }
 
+    #menuToggle {
+        top: 25px;
+        left: 20px;
+    }
+
+    #menuToggle input,
+    #menuToggle span {
+        display: block;
+    }
+
+    #menu {
+        width: 350px;
+        position: fixed;
+    }
+
+    .logo {
+        display: none;
+    }
 }
