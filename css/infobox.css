@@ -32,3 +32,18 @@
     background-color: #FFA07A;
     color: #B22222;
 }
+
+@media screen and (max-width: 320px) {
+    .infoBox .single-character {
+        padding: 20px;
+    }
+    
+    .infoBox {
+        margin: 5px;
+        width: 300px;
+    }
+
+    .infoBox .text {
+        width: 250px;
+    }
+}
