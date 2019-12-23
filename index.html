@@ -35,6 +35,7 @@
     <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="javascript/navigation.js"></script>
     <script type="text/javascript" src="javascript/programming-skills-search.js"></script>
+    <script type="text/javascript" src="javascript/template.js"></script>
     <script src="https://kit.fontawesome.com/e4446002ed.js"></script>
 </head>
 
@@ -136,137 +137,41 @@
                 <h1 class="heading-line red">Experience</h1>
                 <div class="col center">
                     <div class="row rauto">
-                        <div class="col">
-                            <div class="infoBox red">
+                        <template id="copy_infoBox">
+                            <div class="infoBox" id='infoBox'>
                                 <div class="single-character">
-                                    <i class="fab fa-windows"></i>
+                                    <span id="template_text_0"></span>
                                 </div>
                                 <div class="text">
-                                    SSRS Reports
+                                    <span id="template_text_1"></span>
                                 </div>
                             </div>
-                            <div class="infoBox">
-                                <div class="single-character">
-                                    <i class="fas fa-user-check"></i>
-                                </div>
-                                <div class="text">
-                                    Setting Up New Employees
-                                </div>
-                            </div>
-                            <div class="infoBox red">
-                                <div class="single-character">
-                                    <i class="fas fa-laptop-code"></i>
-                                </div>
-                                <div class="text">
-                                    Maintaining Computer Systems
-                                </div>
-                            </div>
-                            <div class="infoBox">
-                                <div class="single-character">
-                                    <i class="fas fa-book-open"></i>
-                                </div>
-                                <div class="text">
-                                    Creating Product Catalogues
-                                </div>
-                            </div>
-                            <div class="infoBox red">
-                                <div class="single-character">
-                                    <i class="fas fa-globe"></i>
-                                </div>
-                                <div class="text">
-                                    Maintaining Websites
-                                </div>
-                            </div>
-                            <div class="infoBox">
-                                <div class="single-character">
-                                    <i class="fas fa-server"></i>
-                                </div>
-                                <div class="text">
-                                    Maintaining Servers
-                                </div>
-                            </div>
-                            <div class="infoBox red">
-                                <div class="single-character">
-                                    <i class="fas fa-network-wired"></i>
-                                </div>
-                                <div class="text">
-                                    Maintaining Networking
-                                </div>
-                            </div>
-                            <div class="infoBox">
-                                <div class="single-character">
-                                    <i class="fas fa-chart-bar"></i>
-                                </div>
-                                <div class="text">
-                                    Business Analyst
-                                </div>
-                            </div>
+                        </template>
+                        <div class="col" id="copied_infoBox1">
+                            <script>
+                                var infoBox1 = new Template('copy_infoBox', 'copied_infoBox1');
+                                infoBox1.replace(['<i class="fab fa-windows"></i>', 'SSRS Reports']).addClass('infoBox', 'red').add();
+                                infoBox1.replace(['<i class="fas fa-user-check"></i>', 'Setting Up New Employees']).add();
+                                infoBox1.replace(['<i class="fas fa-laptop-code"></i>', 'Maintaining Computer Systems']).addClass('infoBox', 'red').add();
+                                infoBox1.replace(['<i class="fas fa-book-open"></i>', 'Creating Product Catalogues']).add();
+                                infoBox1.replace(['<i class="fas fa-globe"></i>', 'Maintaining Websites']).addClass('infoBox', 'red').add();
+                                infoBox1.replace(['<i class="fas fa-server"></i>', 'Maintaining Servers']).add();
+                                infoBox1.replace(['<i class="fas fa-network-wired"></i>', 'Maintaining Networking']).addClass('infoBox', 'red').add();
+                                infoBox1.replace(['<i class="fas fa-chart-bar"></i>', 'Business Analyst']).add();
+                            </script>
                         </div>
-                        <div class="col">
-                            <div class="infoBox">
-                                <div class="single-character">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <div class="text">
-                                    Programming &#38; Development
-                                </div>
-                            </div>
-                            <div class="infoBox red">
-                                <div class="single-character">
-                                    <i class="far fa-hdd"></i>
-                                </div>
-                                <div class="text">
-                                    System Backups
-                                </div>
-                            </div>
-                            <div class="infoBox">
-                                <div class="single-character">
-                                    <i class="fas fa-tools"></i>
-                                </div>
-                                <div class="text">
-                                    Troubleshooting
-                                </div>
-                            </div>
-                            <div class="infoBox red">
-                                <div class="single-character">
-                                    <i class="fas fa-table"></i>
-                                </div>
-                                <div class="text">
-                                    Data Entry
-                                </div>
-                            </div>
-                            <div class="infoBox">
-                                <div class="single-character">
-                                    <i class="fab fa-creative-commons-share"></i>
-                                </div>
-                                <div class="text">
-                                    Creating Custom Systems
-                                </div>
-                            </div>
-                            <div class="infoBox red">
-                                <div class="single-character">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="text">
-                                    Cyber Security
-                                </div>
-                            </div>
-                            <div class="infoBox">
-                                <div class="single-character">
-                                    <i class="fas fa-level-up-alt"></i>
-                                </div>
-                                <div class="text">
-                                    System Upgrades
-                                </div>
-                            </div>
-                            <div class="infoBox red">
-                                <div class="single-character">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <div class="text">
-                                    Data Migration
-                                </div>
-                            </div>
+                        <div class="col" id="copied_infoBox2">
+                            <script>
+                                var infoBox2 = new Template('copy_infoBox', 'copied_infoBox2');
+                                infoBox2.replace(['<i class="fas fa-code"></i>', 'Programming &#38; Development']).add();
+                                infoBox2.replace(['<i class="far fa-hdd"></i>', 'System Backups']).addClass('infoBox', 'red').add();
+                                infoBox2.replace(['<i class="fas fa-tools"></i>', 'Troubleshooting']).add();
+                                infoBox2.replace(['<i class="fas fa-table"></i>', 'Data Entry']).addClass('infoBox', 'red').add();
+                                infoBox2.replace(['<i class="fab fa-creative-commons-share"></i>', 'Creating Custom Systems']).add();
+                                infoBox2.replace(['<i class="fas fa-shield-alt"></i>', 'Cyber Security']).addClass('infoBox', 'red').add();
+                                infoBox2.replace(['<i class="fas fa-level-up-alt"></i>', 'System Upgrades']).add();
+                                infoBox2.replace(['<i class="fas fa-database"></i>', 'Data Migration']).addClass('infoBox', 'red').add();
+                            </script>
                         </div>
                     </div>
                 </div>
