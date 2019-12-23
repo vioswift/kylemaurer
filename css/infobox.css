@@ -31,7 +31,6 @@
     transition: all .3s ease-in;
 }
 
-
 .infoBox:hover .single-character,
 .infoBox:hover .text {
     filter: brightness(110%);
