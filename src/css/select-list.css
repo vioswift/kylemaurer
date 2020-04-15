@@ -1,0 +1,22 @@
+/* select list */
+#selectList {
+	color: white;
+	border: 0px;
+	outline: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 8px;
+	background-color: transparent;
+    display: none;
+}
+
+#selectList:focus { 
+	background-color: white;
+	color: #D3182F;
+}
+
+@media screen and (max-width: 812px) {
+	#selectList {
+        display: block;
+    }
+}
