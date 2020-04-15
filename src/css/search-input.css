@@ -1,0 +1,28 @@
+/* search input */
+.searchInput[type=text] {
+	width: 100%;
+	padding: 8px 20px;
+	box-sizing: border-box;
+	border: 4px solid white;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+
+.searchInput[type=text]:focus {
+	border: 5px solid #D3182F;
+	padding: 12px 20px;
+	font-size: 18px;
+}
+
+.searchInput[type=text]:hover {
+	border: 5px solid #ccc;
+	padding: 12px 20px;
+	font-size: 18px;
+}
+
+.searchInput[type=text]:focus:hover {
+	border: 5px solid #D3182F;
+	padding: 12px 20px;
+	font-size: 18px;
+}

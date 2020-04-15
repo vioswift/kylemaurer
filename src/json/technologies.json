@@ -1,0 +1,86 @@
+{
+    "technologies": [
+        { 
+            "text": "Design",
+            "items": [
+                "Adobe Suite",
+                "Affinity Suite"
+            ],
+            "color": "",
+            "id": 1
+        },
+        { 
+            "text": "Accounting",
+            "items": [
+                "MYOB 2019",
+                "MYOB v19.14"
+            ],
+            "color": "",
+            "id": 2
+        },
+        { 
+            "text": "Services",
+            "items": [
+                "Mailchimp",
+                "BurstSMS",
+                "Exclaimer",
+                "WooCommerce"
+            ],
+            "color": "",
+            "id": 3
+        },
+        { 
+            "text": "Office Skills",
+            "items": [
+                "Microsoft Office 365",
+                "Visio"
+            ],
+            "color": "",
+            "id": 4
+        },
+        { 
+            "text": "CRM",
+            "items": [
+                "Microsoft Dynamics CRM 2011",
+                "Goldmine"
+            ],
+            "color": "",
+            "id": 5
+        },
+        { 
+            "text": "Administration",
+            "items": [
+                "Spiceworks",
+                "Veeam Agent",
+                "Windows Backup",
+                "Active Directory"
+            ],
+            "color": "",
+            "id": 6
+        },
+        { 
+            "text": "Development",
+            "items": [
+                "XAMPP",
+                "Sourcetree",
+                "GitHub",
+                "phpMyAdmin",
+                "cPanel",
+                "SSRS"
+            ],
+            "color": "",
+            "id": 7
+        },
+        { 
+            "text": "Operating Systems",
+            "items": [
+                "Windows Server 2016 & 2012",
+                "Windows XP - 10",
+                "MacOS",
+                "Cisco IOS"
+            ],
+            "color": "",
+            "id": 8
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+.landing-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+}
+
+.landing-bg {
+    background-image: url("../images/computer-background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(5px) brightness(30%);
+    -moz-filter: blur(5px) brightness(30%);
+    -o-filter: blur(5px) brightness(30%);
+    -ms-filter: blur(5px) brightness(30%);
+    filter: blur(5px) brightness(30%);
+}
+
+.newpage.landing-page {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.full-logo {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+
+.full-logo img {
+    width: 100px;
+    height: auto;
+    padding: 5px;
+}
+
+.full-logo h1 {
+    font-size: 35px;
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 2px;
+    font-family: "Ebrima", "Arial";
+}
+
+.full-logo h2 {
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-family: "Bookman Old Style", "Times New Roman";
+}
+
+.full-logo hr {
+    border: 2px solid #D3182F;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 258px;
+}
+
+.quote {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    left: 0;
+}
+
+.down-button {
+    width: 100%;
+    height: 50px;
+    left: 0;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    position: absolute;
+    animation: MoveUpDown 2.5s linear infinite;
+    -webkit-transition: font-size .2s ease-in-out;
+    -moz-transition: font-size .2s ease-in-out;
+    -o-transition: font-size .2s ease-in-out;
+    transition: font-size .2s ease-in-out;
+}
+
+.down-button:hover {
+    color: #D3182F;
+    font-size: 42px;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    /* .landing-group {
+        transform: translate(-78%, -50%);
+    } */
+}

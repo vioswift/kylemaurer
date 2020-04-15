@@ -1,0 +1,100 @@
+{
+    "experiences": [
+        { 
+            "text": "SSRS Reports",
+            "icon": "fab fa-windows",
+            "color": "",
+            "id": 1
+        },
+        { 
+            "text": "Setting Up New Employees",
+            "icon": "fas fa-user-check",
+            "color": "",
+            "id": 2
+        },
+        { 
+            "text": "Maintaining Computer Systems",
+            "icon": "fas fa-laptop-code",
+            "color": "",
+            "id": 3
+        },
+        { 
+            "text": "Creating Product Catalogues",
+            "icon": "fas fa-book-open",
+            "color": "",
+            "id": 4
+        },
+        { 
+            "text": "Maintaining Websites",
+            "icon": "fas fa-globe",
+            "color": "",
+            "id": 5
+        },
+        { 
+            "text": "Maintaining Servers",
+            "icon": "fas fa-server",
+            "color": "",
+            "id": 6
+        },
+        { 
+            "text": "Maintaining Networking",
+            "icon": "fas fa-network-wired",
+            "color": "",
+            "id": 7
+        },
+        { 
+            "text": "Business Analyst",
+            "icon": "fas fa-chart-bar",
+            "color": "",
+            "id": 8
+        },
+        { 
+            "text": "Programming & Development",
+            "icon": "fas fa-code",
+            "color": "",
+            "id": 9
+        },
+        { 
+            "text": "System Backups",
+            "icon": "far fa-hdd",
+            "color": "",
+            "id": 10
+        },
+        { 
+            "text": "Troubleshooting",
+            "icon": "fas fa-tools",
+            "color": "",
+            "id": 11
+        },
+        { 
+            "text": "Data Entry",
+            "icon": "fas fa-table",
+            "color": "",
+            "id": 12
+        },
+        { 
+            "text": "Creating Custom Systems",
+            "icon": "fab fa-creative-commons-share",
+            "color": "",
+            "id": 13
+        },
+        { 
+            "text": "Cyber Security",
+            "icon": "fas fa-shield-alt",
+            "color": "",
+            "id": 14
+        },
+        { 
+            "text": "System Upgrades",
+            "icon": "fas fa-level-up-alt",
+            "color": "",
+            "id": 15
+        },
+        { 
+            "text": "Data Migration",
+            "icon": "fas fa-database",
+            "color": "",
+            "id": 16
+        }
+    ]
+}
