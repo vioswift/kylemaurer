@@ -10,7 +10,7 @@ import './css/miscellaneous.css';
 import './css/bullet-points.css';
 import Navigation from './components/Navigation';
 import AboutIcons from './components/AboutIcons';
-import InfoBoxes from './components/InfoBoxes';
+import InfoBoxes from './components/infobox/InfoBoxes';
 import Programming from './components/programming/Programming';
 import Cards from './components/cards';
 import Projects from './components/projects/Projects';
