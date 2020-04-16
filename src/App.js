@@ -12,7 +12,7 @@ import Navigation from './components/Navigation';
 import AboutIcons from './components/AboutIcons';
 import InfoBoxes from './components/infobox/InfoBoxes';
 import Programming from './components/programming/Programming';
-import Cards from './components/cards';
+import Cards from './components/card/cards';
 import Projects from './components/projects/Projects';
 import SmallProjects from './components/projects/SmallProjects';
 import ContactForm from './components/ContactForm';

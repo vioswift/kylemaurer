@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from '../components/card';
-import technologiesJSON from '../json/technologies.json';
+import Card from './card';
+import technologiesJSON from '../../json/technologies.json';
 
 export default function Cards(props) {
     const getColor = (stored_color, id) => {
