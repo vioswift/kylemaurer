@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './images/logo.png';
+import './css/style.css';
 import './css/base.css';
 import './css/page.css';
 import './css/grid.css';

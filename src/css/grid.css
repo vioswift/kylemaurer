@@ -1,5 +1,6 @@
 .container {
     margin: 25px;
+    margin-left: 45px;
 }
 
 .row {
@@ -37,8 +38,13 @@
     align-items: center;
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 1024px) {
     .row {
         width: 100%;
+    }
+
+    .container {
+        margin: 25px;
+        margin-left: 25px;
     }
 }

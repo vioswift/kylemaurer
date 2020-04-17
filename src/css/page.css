@@ -1,7 +1,7 @@
 /* Main content */
 .main {
-    margin-left: 300px;
-    width: calc(100% - 300px);
+    margin-left: 145px;
+    width: calc(100% - 145px);
     height: 100%;
     /* Same as the width of the sidenav */
     position: fixed;
