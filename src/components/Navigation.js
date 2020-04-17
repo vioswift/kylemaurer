@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-// import '../css/navigation.css';
+import React, { useState } from 'react';
 import '../css/navigation/menu.css';
 import '../css/navigation/topnav.css';
 import '../css/navigation/menuToggle.css';
 import logo from '../images/logo.png';
-import useWindowSize from '../customhooks/useWindowSize';
 import useViewport from '../customhooks/useViewport';
 
 
