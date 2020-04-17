@@ -14,6 +14,14 @@ export default function useViewport() {
         return isVisible;
     };
 
+    const setSiteTitle = (text, index) => {
+        if (index === 0) {
+            document.title = "Kyle Maurer - I.T Professional";
+        } else {
+            document.title = "Kyle Maurer - " + text;
+        }
+    };
+
     useEffect(() => {
         const setScrollYPosition = () => {
             var getMain = document.getElementById("main");
@@ -24,6 +32,7 @@ export default function useViewport() {
     
                 if (isInViewport(element)) {
                     setIndex(count);
+                    setSiteTitle(element.innerHTML, count);
                 }
             }
         }

@@ -1,0 +1,17 @@
+.topnav {
+    overflow: hidden;
+    background-color: var(--tertiary);
+    position: relative;
+    text-align: center;
+    display: none;
+}
+
+.topnav img {
+    padding: 5px;
+}
+
+@media screen and (max-device-width : 1024px) {
+    .topnav {
+        display: block;
+    }
+}

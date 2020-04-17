@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/cards.css';
+import '../../css/cards.css';
 
 export default function card(props) {
     const items = props.items.map((number, keyID) =>

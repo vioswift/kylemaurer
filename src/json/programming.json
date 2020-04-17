@@ -128,7 +128,8 @@
             "text": "Laravel",
             "url": "https://en.wikipedia.org/wiki/Laravel",
             "category": [
-                "frameworks"
+                "frameworks",
+                "back-end"
             ],
             "icon": "devicon-laravel-plain",
             "color": "orange"

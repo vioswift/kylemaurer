@@ -1,6 +1,6 @@
 import React from 'react';
-import InfoBox from '../components/InfoBox';
-import experienceJSON from '../json/experience.json';
+import InfoBox from './InfoBox';
+import experienceJSON from '../../json/experience.json';
 
 export default function InfoBoxes(props) {
     const getColor = (stored_color, id) => {
