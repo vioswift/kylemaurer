@@ -40,7 +40,7 @@ export default function Navigation() {
                     {navItems}
                 </ul>
             </nav>
-            <div className={"blackout " + (toggle ? 'open' : '')} onClick={closeMenu}><i class="fas fa-arrow-left"></i></div>
+            <div className={"blackout " + (toggle ? 'open' : '')} onClick={closeMenu}><i className="fas fa-arrow-left"></i></div>
 
             <div className="topnav">
                 {menuToggle}

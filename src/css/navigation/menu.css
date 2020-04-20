@@ -41,11 +41,11 @@
 
 .menu a:hover {
     background-color: var(--tertiary);
-    filter: brightness(2);
+    filter: var(--brightness);
 }
 
 .menu li a.active:hover {
-    filter: brightness(110%);
+    filter: var(--brightness);
 }
 
 .menu ul {

@@ -12,4 +12,7 @@
 
     /* transitions */
     --transition: .35s ease-in-out;
+
+    /* brightness */
+    --brightness: brightness(150%);
 }

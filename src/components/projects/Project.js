@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../../css/projects.css';
 import Badge from '../Badge';
 import Button from '../Button';
 
 export default function Project(props) {
+    const anchor = useRef()
     const buttons = () => {
         return props.buttons.map(function(button, keyID) {
             return <Button 
@@ -33,7 +34,7 @@ export default function Project(props) {
     }
 
     return (
-        <li>
+        <li ref={anchor}>
             <img src={require("../../images/projects/" + props.logo)} alt={props.heading + " Logo"}/>
             <h2 className="heading red">{props.heading}</h2>
             <p>{props.text}</p>

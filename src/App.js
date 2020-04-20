@@ -22,6 +22,7 @@ import Page from './components/Page';
 import MiniBar from './components/MiniBar';
 import Title from './components/Title';
 import Logo from './components/Logo';
+import Slider from './components/projects/Slider';
 
 function App() {
     return (
@@ -50,6 +51,7 @@ function App() {
 
                         <Logo fullLogo={true}/>
                         <Title/>
+                        <Slider/>
                         <MiniBar/>
                     </div>
                 </div>
