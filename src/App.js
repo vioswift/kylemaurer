@@ -18,6 +18,7 @@ import Projects from './components/projects/Projects';
 import SmallProjects from './components/projects/SmallProjects';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import Page from './components/Page';
 
 function App() {
     return (
@@ -46,99 +47,74 @@ function App() {
                     </div>
                 </div>
 
-                <div className="newpage">
-                    <a className="visuallyhidden" id="about" href="#about">about</a>
-                    <div className="container">
-                    <h1 className="heading-line red">About</h1>
-                        <div className="col" style={{ "textAlign": "center" }}>
-                            <AboutIcons/>
-                            <p>
-                                I have a serious passion for software development, I enjoy solving problems and
-                                making things as simple and efficient as possible!
-                            </p>
-                            <p>
-                                I have completed my University degree in a <strong>Bachelor of Information Communication
-                                    Technology</strong> and graduated with a <strong>Distinction</strong>.
-                            </p>
-                            <p>
-                                I enjoy working in <strong>front-end</strong> and <strong>back-end</strong> web development, I also enjoy coding software for the
-                                desktop, I just love software development!
-                            </p>
-                        </div>
+                <Page heading={"About"} theme={"dark"}>
+                    <div className="col" style={{ "textAlign": "center" }}>
+                        <AboutIcons/>
+                        <p>
+                            I have a serious passion for software development, I enjoy solving problems and
+                            making things as simple and efficient as possible!
+                        </p>
+                        <p>
+                            I have completed my University degree in a <strong>Bachelor of Information Communication
+                                Technology</strong> and graduated with a <strong>Distinction</strong>.
+                        </p>
+                        <p>
+                            I enjoy working in <strong>front-end</strong> and <strong>back-end</strong> web development, I also enjoy coding software for the
+                            desktop, I just love software development!
+                        </p>
                     </div>
-                </div>
+                </Page>
 
-                <div className="newpage bluegradientbg" name="experience" id="test2">
-                    <a className="visuallyhidden" name="experience" href="#experience">experience</a>
-                    <div className="container">
-                        <h1 className="heading-line red">Experience</h1>
-                        <div className="col center">
-                            <div className="row rauto">
-                                <div className="col">
-                                    <InfoBoxes indexStart={0} indexEnd={8} colors={["blue", "red"]}/>
-                                </div>
-                                <div className="col">
-                                    <InfoBoxes indexStart={8} indexEnd={16} colors={["red", "blue"]}/>
-                                </div>
+                <Page heading={"Experience"} theme={"light"}>
+                    <div className="col center">
+                        <div className="row rauto">
+                            <div className="col">
+                                <InfoBoxes indexStart={0} indexEnd={8} colors={["blue", "red"]}/>
+                            </div>
+                            <div className="col">
+                                <InfoBoxes indexStart={8} indexEnd={16} colors={["red", "blue"]}/>
                             </div>
                         </div>
                     </div>
-                </div>
+                </Page>
 
-                <div className="newpage">
-                    <a className="visuallyhidden" name="programming" href="programming">programming</a>
-                    <div className="container">
-                        <h1 className="heading-line red">Programming Skills</h1>
-                        <Programming/>
-                    </div>
-                </div>
+                <Page heading={"Programming"} theme={"dark"}>
+                    <Programming/>
+                </Page>
 
-                <div className="newpage bluegradientbg">
-                    <a className="visuallyhidden" name="technologies" href="technologies">technologies</a>
-                    <h1 className="heading-line red">Technologies</h1>
-                    <div className="container">
-                        <div className="col center">
-                            <div className="row rauto">
-                                <div className="col">
-                                    <Cards indexStart={0} indexEnd={4} colors={["", "darkgrey"]}/>                    
-                                </div>
-                                <div className="col">
-                                    <Cards indexStart={4} indexEnd={8} colors={["darkgrey", ""]}/>                    
-                                </div>
+                <Page heading={"Technologies"} theme={"light"}>
+                    <div className="col center">
+                        <div className="row rauto">
+                            <div className="col">
+                                <Cards indexStart={0} indexEnd={4} colors={["", "darkgrey"]}/>                    
+                            </div>
+                            <div className="col">
+                                <Cards indexStart={4} indexEnd={8} colors={["darkgrey", ""]}/>                    
                             </div>
                         </div>
                     </div>
-                </div>
+                </Page>
 
-                <div className="newpage">
-                    <a className="visuallyhidden" name="projects" href="projects">projects</a>
-                    <div className="container">
-                        <h1 className="heading-line red">Projects</h1>
-                        <h2>Major Projects</h2>
-                        <div className="row r100">
-                            <ul className="projects">
-                                <Projects/>
-                            </ul>
-                        </div>
-                        <h2>Small Projects</h2>
-                        <div className="row r100">
-                            <ul className="scripts">
-                                <SmallProjects/>
-                            </ul>
-                        </div>
+                <Page heading={"Projects"} theme={"dark"}>
+                    <h2>Major Projects</h2>
+                    <div className="row r100">
+                        <ul className="projects">
+                            <Projects/>
+                        </ul>
                     </div>
-                </div>
+                    <h2>Small Projects</h2>
+                    <div className="row r100">
+                        <ul className="scripts">
+                            <SmallProjects/>
+                        </ul>
+                    </div>
+                </Page>
 
-                <div className="newpage bluegradientbg">
-                    <a className="visuallyhidden" name="contact" href="contact">contact</a>
-                    <div className="container">
-                        <h1 className="heading-line red">Contact</h1>
-                        <ContactForm/>
-                    </div>
-                </div>
+                <Page heading={"Contact"} theme={"light"}>
+                    <ContactForm/>
+                </Page>
 
                 <Footer/>
-
             </div>
         </>
     );
