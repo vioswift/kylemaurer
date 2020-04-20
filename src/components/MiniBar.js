@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/navigation/minibar.css';
 import Button from './Button';
 
-export default function MiniBar(props) {
+export default function MiniBar() {
     return (
         <div className="minibar">
             <Button 

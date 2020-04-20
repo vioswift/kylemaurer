@@ -1,0 +1,14 @@
+.title {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 42px;
+}
+
+@media screen and (max-device-width : 1024px) {
+    .title {
+        left: 18%;
+        top: 10%;
+        font-size: 38px;
+    }
+}

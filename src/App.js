@@ -20,6 +20,8 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import Page from './components/Page';
 import MiniBar from './components/MiniBar';
+import Title from './components/Title';
+import Logo from './components/Logo';
 
 function App() {
     return (
@@ -28,9 +30,10 @@ function App() {
             <div className="main" id="main">
                 <div className="newpage landing-page">
                     <a className="visuallyhidden" id="home" href="#home">Home</a>
+                    <h1 className="visuallyhidden">Home</h1>
                     <div className="landing-bg"></div>
                     <div className="container">
-                        <div className="landing-group">
+                        {/* <div className="landing-group">
                             <div className="full-logo">
                                 <img src={logo} alt="Kyle Maurer Logo"/>
                                 <h1 id="landingPageTitle">Kyle Maurer</h1>
@@ -43,8 +46,10 @@ function App() {
                                     Always think three steps ahead!
                                 </em>
                             </div>
-                        </div>
-                        {/* <a href="#about" className="down-button"><i className="fas fa-chevron-down"></i></a> */}
+                        </div> */}
+
+                        <Logo fullLogo={true}/>
+                        <Title/>
                         <MiniBar/>
                     </div>
                 </div>

@@ -13,5 +13,12 @@
 
 .visuallyhidden {
     visibility: hidden;
-    position:absolute;
+    position: absolute;
 }
+
+@media screen and (max-device-width : 1024px) {
+    .hideMobile {
+        display: none;
+    }
+}
+
