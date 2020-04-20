@@ -19,6 +19,7 @@ import SmallProjects from './components/projects/SmallProjects';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import Page from './components/Page';
+import MiniBar from './components/MiniBar';
 
 function App() {
     return (
@@ -43,7 +44,8 @@ function App() {
                                 </em>
                             </div>
                         </div>
-                        <a href="#about" className="down-button"><i className="fas fa-chevron-down"></i></a>
+                        {/* <a href="#about" className="down-button"><i className="fas fa-chevron-down"></i></a> */}
+                        <MiniBar/>
                     </div>
                 </div>
 

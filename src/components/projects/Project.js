@@ -1,8 +1,7 @@
 import React from 'react';
 import '../../css/projects.css';
-import '../../css/badges.css';
-import Badge from '../badge';
-import Button from '../button';
+import Badge from '../Badge';
+import Button from '../Button';
 
 export default function Project(props) {
     const buttons = () => {
