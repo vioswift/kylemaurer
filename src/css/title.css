@@ -1,14 +1,28 @@
 .title {
     position: absolute;
     top: 25%;
-    left: 25%;
-    font-size: 42px;
+    left: 0px;
+    width: 100%;
+    font-size: 52px;
+    /* text-align: center; */
+    font-family: "Times New Roman", Times, serif;
 }
+
+.title .text {
+    position: relative;
+    width: 750px; 
+    left: calc(50% - 300px);
+}
+
 
 @media screen and (max-device-width : 1024px) {
     .title {
-        left: 18%;
-        top: 10%;
+        top: 7%;
         font-size: 38px;
+    }
+
+    .title .text {
+        width: 250px; 
+        left: calc(50% - 100px);
     }
 }
