@@ -2,43 +2,46 @@
 /* tabbed buttons */
 .tabbed-buttons {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .tabbed-buttons button {
     background-color: transparent;
-    color: white;
+    color: var(--white);
     float: left;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
+    margin: 5px;
     font-size: 17px;
-    width: calc(100% / 6);
+    width: calc(100% / 7);
     border: none;
-    transition: all 0.7s;
+    border-radius: 25px;
+    transition-duration: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
 }
 
 .tabbed-buttons button.active {
-    background-color: #D3182F;
+    background-color: var(--primary);
     font-weight: bold;
-    font-size: 18px;
 }
 
 .tabbed-buttons button:hover {
-    color: #232323;
-    background-color: #ccc;
-    font-size: 18px;
-    letter-spacing: 1px;
+    color: var(--tertiary);
+    background-color: var(--white);
 }
 
 .tabbed-buttons button.active:hover {
-    background-color: #D3182F;
+    background-color: var(--primary);
     font-weight: bold;
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 1024px) {
     .tabbed-buttons button {
         display: none;
-        /* width: 130px; */
     }
 
     .selectList {
