@@ -3,7 +3,7 @@
         {
             "heading": "Kyle Maurer",
             "text": "Portfolio website",
-            "logo": "logo.png",
+            "logo": "kylemaurer_logo.png",
             "year": "2020",
             "projectType": "Personal",
             "color": "",
@@ -29,7 +29,7 @@
         {
             "heading": "Clock-Duration",
             "text": "Date and time duration calculator",
-            "logo": "clock-duration-logo.png",
+            "logo": "clock_duration_logo.png",
             "year": "2019",
             "projectType": "Personal",
             "color": "",
@@ -55,7 +55,7 @@
         {
             "heading": "Tic-Tac-Toe",
             "text": "Play any board size with A.I",
-            "logo": "Tic-Tac-Toe-Game-grey.png",
+            "logo": "tic_tac_toe_logo.png",
             "year": "2018",
             "projectType": "University",
             "color": "",
@@ -74,7 +74,7 @@
         {
             "heading": "Time-In-Lieu-Tracker",
             "text": "Track how much time in lieu you have acuminated",
-            "logo": "timeinlieutracker-logo-white.png",
+            "logo": "time_in_lieu_tracker_logo.png",
             "year": "2019",
             "projectType": "Personal",
             "color": "",
@@ -102,7 +102,7 @@
         {
             "heading": "Patch-Reminder",
             "text": "Script to send a HTML email on a certain day of the month",
-            "logo": "patchreminder.png",
+            "logo": "patch_reminder_logo.png",
             "year": "2020",
             "projectType": "Personal",
             "color": "",
