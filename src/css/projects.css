@@ -42,9 +42,12 @@
     transition: all .2s ease-in;
     font-size: 15px;
     font-weight: bold;
-    color: #D3182F;
+    color: var(--primary);
 }
 
+.projects li .heading {
+    color: var(--primary);
+}
 .projects li h2 {
     text-transform: uppercase;
     margin-bottom: 0;
@@ -60,7 +63,7 @@
 }
 
 .projects li small {
-    color: lightgrey;
+    color: var(--white);
 }
 
 /* scripts */
@@ -78,7 +81,11 @@
     width: 300px;
     height: 180px;
     border-radius: 5px;
-    background-color: #2c2f3357;
+    background-color: var(--tertiary);
+}
+
+.scripts li .heading {
+    color: var(--primary);
 }
 
 @media screen and (max-width: 812px) {

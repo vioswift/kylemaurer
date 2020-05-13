@@ -14,7 +14,7 @@
     width: 15%;
     height: 3px;
     content: '\a0';
-    background-color: #D3182F;
+    background-color: var(--primary);
 }
 
 .heading-line:before {

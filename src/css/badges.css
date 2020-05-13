@@ -1,11 +1,17 @@
 /* badge */
 .badge {
-    color: #ffffff;
-    background-color: #D3182F;
+    color: var(--white);
+    background-color: var(--primary);
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     margin: 3px;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition-duration: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
 }
 
 .badge:hover {

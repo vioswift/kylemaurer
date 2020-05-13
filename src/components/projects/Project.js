@@ -35,7 +35,7 @@ export default function Project(props) {
     return (
         <li>
             <img src={require("../../images/projects/" + props.logo)} alt={props.heading + " Logo"}/>
-            <h2 className="heading red">{props.heading}</h2>
+            <h2 className="heading">{props.heading}</h2>
             <p>{props.text}</p>
             <small>
                 <span className="project-year">- {props.year} -</span> <br/>

@@ -22,7 +22,7 @@ export default function Page(props) {
         <div className={"newpage " + getTheme().background}>
             <a className="visuallyhidden" id={getHeadingLower()} href={"#" + getHeadingLower()}>{getHeadingLower()}</a>
             <div className="container">
-                <h1 className="heading-line red">{props.heading}</h1>
+                <h1 className="heading-line">{props.heading}</h1>
                 {props.children}
             </div>
         </div>

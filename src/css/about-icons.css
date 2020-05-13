@@ -8,9 +8,10 @@
 }
 
 .about-icons i {
-    color: white;
+    color: var(--tertiary);
     font-size: 45px;
     line-height: 60px;
+    margin-top: 12px;
 }
 
 .about-icons span {
@@ -18,88 +19,46 @@
     top: 100px;
     left: 0;
     font-weight: bold;
-    font-size: 21px;
-    color: white;
+    font-size: 20px;
 }
 
-.hexagon {
-    width: 100px;
-    height: 60px;
-    background: #5F6062;
+.circle {
+    width: 90px;
+    height: 90px;
     position: relative;
     text-align: center;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition-duration: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
     margin: 10px;
-}
-
-.hexagon:before {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid #5F6062;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid #5F6062;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    border-radius: 100%;
+    border-color: var(--white);
+    background: var(--white);
 }
 
 /* on hover */
-.hexagon:hover {
-    background: #D3182F;
-    filter: brightness(130%);
+.circle:hover {
+    filter: var(--brightness);
 }
 
-/* red */
-.hexagon.red { 
-    background: #D3182F;
+/* primary */
+.circle.primary { 
+    background-color: var(--primary);
 }
 
-.hexagon.red:before {
-    border-bottom: 25px solid #D3182F;
+.circle.primary i {
+    color: var(--white);
 }
 
-.hexagon.red:after {
-    border-top: 25px solid #D3182F;
+/* tertiary */
+.circle.tertiary { 
+    border-color: var(--tertiary);
 }
 
-/* blue */
-.hexagon.blue { 
-    background: #152F4F;
-}
-
-.hexagon.blue:before {
-    border-bottom: 25px solid #152F4F;
-}
-
-.hexagon.blue:after {
-    border-top: 25px solid #152F4F;
+.circle.tertiary i {
+    color: var(--tertiary);
 }
 
 @media screen and (max-width: 812px) {
@@ -111,7 +70,7 @@
         font-size: 32px;
     }
     
-    .hexagon { 
+    .circle { 
         margin: 24px;
         margin-top: 125px;
     }
