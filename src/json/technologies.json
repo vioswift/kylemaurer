@@ -12,7 +12,7 @@
         { 
             "text": "Accounting",
             "items": [
-                "MYOB 2019",
+                "MYOB 2019.1",
                 "MYOB v19.14"
             ],
             "color": "",
@@ -24,7 +24,8 @@
                 "Mailchimp",
                 "BurstSMS",
                 "Exclaimer",
-                "WooCommerce"
+                "WooCommerce",
+                "Netlify"
             ],
             "color": "",
             "id": 3

@@ -7,6 +7,11 @@
     --secondary: rgba(21,47,79,1);
     --tertiary: #2c2f33;
 
+    /* lighter versions  of main colors */
+    --primary-light: rgb(255, 160, 171);
+    --secondary-light: rgba(21,47,79,1);
+    --tertiary-light: #2c2f33;
+
     /* fonts */
     --main-font: Arial;
 

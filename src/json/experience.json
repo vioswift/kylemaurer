@@ -3,98 +3,62 @@
         { 
             "text": "SSRS Reports",
             "icon": "fab fa-windows",
-            "color": "",
-            "id": 1
+            "color": ""
         },
         { 
-            "text": "Setting Up New Employees",
+            "text": "Onboarding",
             "icon": "fas fa-user-check",
-            "color": "",
-            "id": 2
+            "color": ""
         },
         { 
-            "text": "Maintaining Computer Systems",
-            "icon": "fas fa-laptop-code",
-            "color": "",
-            "id": 3
-        },
-        { 
-            "text": "Creating Product Catalogues",
-            "icon": "fas fa-book-open",
-            "color": "",
-            "id": 4
-        },
-        { 
-            "text": "Maintaining Websites",
-            "icon": "fas fa-globe",
-            "color": "",
-            "id": 5
-        },
-        { 
-            "text": "Maintaining Servers",
+            "text": "Server Administrator",
             "icon": "fas fa-server",
-            "color": "",
-            "id": 6
+            "color": ""
         },
         { 
-            "text": "Maintaining Networking",
+            "text": "Digital Designer",
+            "icon": "fas fa-book-open",
+            "color": ""
+        },
+        { 
+            "text": "Web Developer",
+            "icon": "fas fa-globe",
+            "color": ""
+        },
+        { 
+            "text": "Networking",
             "icon": "fas fa-network-wired",
-            "color": "",
-            "id": 7
+            "color": ""
         },
         { 
             "text": "Business Analyst",
             "icon": "fas fa-chart-bar",
-            "color": "",
-            "id": 8
+            "color": ""
         },
         { 
-            "text": "Programming & Development",
+            "text": "Software Developer",
             "icon": "fas fa-code",
-            "color": "",
-            "id": 9
+            "color": ""
         },
         { 
-            "text": "System Backups",
+            "text": "System Administrator",
             "icon": "far fa-hdd",
-            "color": "",
-            "id": 10
+            "color": ""
         },
         { 
             "text": "Troubleshooting",
             "icon": "fas fa-tools",
-            "color": "",
-            "id": 11
-        },
-        { 
-            "text": "Data Entry",
-            "icon": "fas fa-table",
-            "color": "",
-            "id": 12
-        },
-        { 
-            "text": "Creating Custom Systems",
-            "icon": "fab fa-creative-commons-share",
-            "color": "",
-            "id": 13
+            "color": ""
         },
         { 
             "text": "Cyber Security",
             "icon": "fas fa-shield-alt",
-            "color": "",
-            "id": 14
+            "color": ""
         },
         { 
-            "text": "System Upgrades",
+            "text": "System Analyst",
             "icon": "fas fa-level-up-alt",
-            "color": "",
-            "id": 15
-        },
-        { 
-            "text": "Data Migration",
-            "icon": "fas fa-database",
-            "color": "",
-            "id": 16
+            "color": ""
         }
     ]
 }

@@ -78,10 +78,10 @@ function App() {
                     <div className="col center">
                         <div className="row rauto">
                             <div className="col">
-                                <InfoBoxes indexStart={0} indexEnd={8} colors={["blue", "red"]}/>
+                                <InfoBoxes indexStart={0} indexEnd={6} colors={["black", "red"]}/>
                             </div>
                             <div className="col">
-                                <InfoBoxes indexStart={8} indexEnd={16} colors={["red", "blue"]}/>
+                                <InfoBoxes indexStart={6} indexEnd={12} colors={["red", "black"]}/>
                             </div>
                         </div>
                     </div>
