@@ -1,7 +1,7 @@
 .minibar-button {
     background-color: var(--primary);
     border: none;
-    color: var(--white);
+    color: var(--tertiary);
     padding: 5px 28px;
     text-align: center;
     text-decoration: none;

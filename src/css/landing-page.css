@@ -1,6 +1,6 @@
 .landing-group {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 52%;
     transform: translate(-50%, -50%);
     overflow: hidden;
@@ -35,7 +35,7 @@
 }
 
 .full-logo img {
-    width: 100px;
+    width: 200px;
     height: auto;
     padding: 5px;
 }

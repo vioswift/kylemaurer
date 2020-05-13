@@ -44,6 +44,10 @@
     color: var(--primary);
 }
 
+.slider .slider-item:hover span{
+    color: var(--primary);
+}
+
 .slider .slider-item span {
     position: absolute;
     display: block;

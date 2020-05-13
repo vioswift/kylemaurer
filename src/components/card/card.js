@@ -8,7 +8,9 @@ export default function card(props) {
 
     return (
         <div className={"card " + props.color}>
-            <h2>{props.heading}</h2>
+            <div className="heading">
+                <h2>{props.heading}</h2>
+            </div>
             <ul className="bullet">
                 {items}
             </ul>

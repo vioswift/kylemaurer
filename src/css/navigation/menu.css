@@ -26,7 +26,7 @@
 }
 
 .menu li a.active {
-    color: var(--white);
+    color: var(--tertiary);
     background-color: var(--primary);
 }
 

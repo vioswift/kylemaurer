@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import '../css/navigation/menu.css';
 import '../css/navigation/topnav.css';
 import '../css/navigation/menuToggle.css';
-import logo from '../images/logo.png';
 import useViewport from '../customhooks/useViewport';
-
+import Logo from './Logo';
 
 export default function Navigation() {
     const [toggle, setToggle] = useState(false);
@@ -36,7 +35,7 @@ export default function Navigation() {
         <>            
             <nav role="navigation" className={"menu " + (toggle ? 'open' : '')}>
                 <ul>
-                    <li className="logo"><img src={logo} className="logo" alt="Kyle Maurer Logo"/></li>
+                    <li className="logo"><Logo fullLogo={false}/></li>
                     {navItems}
                 </ul>
             </nav>
@@ -45,7 +44,7 @@ export default function Navigation() {
             <div className="topnav">
                 {menuToggle}
                 <a href="#home" className="active">
-                    <img src={logo} alt="Kyle Maurer Logo" width="60" height="60"/>
+                    <Logo fullLogo={false}/>
                 </a>
             </div>
         </>

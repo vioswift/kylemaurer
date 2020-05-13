@@ -34,7 +34,6 @@
     transition: var(--transition);
     margin: 10px;
     border-radius: 100%;
-    border-color: var(--white);
     background: var(--white);
 }
 
@@ -49,7 +48,7 @@
 }
 
 .circle.primary i {
-    color: var(--white);
+    color: var(--tertiary);
 }
 
 /* tertiary */

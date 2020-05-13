@@ -46,11 +46,11 @@
 /* red */
 .infoBox.red {
     background-color: var(--primary);
-    color: var(--white);
+    color: var(--tertiary);
 }
 
 .infoBox.red .single-character  {
-    background-color: var(--white);
+    background-color: var(--tertiary);
     color: var(--primary);
 }
 

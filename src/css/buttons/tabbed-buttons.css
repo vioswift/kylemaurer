@@ -26,6 +26,7 @@
 
 .tabbed-buttons button.active {
     background-color: var(--primary);
+    color: var(--tertiary);
     font-weight: bold;
 }
 
