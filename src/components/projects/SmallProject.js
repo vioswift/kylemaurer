@@ -12,7 +12,6 @@ export default function SmallProject(props) {
                 url={button.url}
                 buttonType={"project-button"}
                 color={button.color}
-                icon={button.icon}
                 text={button.text}
             />
         });
@@ -33,12 +32,14 @@ export default function SmallProject(props) {
     }
 
     return (
-        <li>
+        <div className="project">
             <h2 className="heading">{props.heading}</h2>
             <div className="badge-container">
                 {badges()}
             </div>
-            {buttons()}
-        </li>
+            <div className="buttons">
+                {buttons()}
+            </div>
+        </div>
     );
 }

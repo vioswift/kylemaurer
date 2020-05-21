@@ -37,11 +37,11 @@ export default function Slider() {
     }
 
     const getProjectSlides = projectsJSON.projects.map((project, keyID) =>
-        <SliderItem key={keyID} text={project.heading} slide={getNumber(keyID)}/>
+        <SliderItem key={keyID} text={project.heading} logo={project.logo} slide={getNumber(keyID)}/>
     );
 
     const getSmallProjectSlides = projectsJSON.small_projects.map((project, keyID) =>
-        <SliderItem key={keyID} text={project.heading} slide={getNumber(keyID)}/>
+        <SliderItem key={keyID} text={project.heading} logo={project.logo} slide={getNumber(keyID)}/>
     );
 
     const onClickLeft = () => {

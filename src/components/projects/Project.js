@@ -11,8 +11,6 @@ export default function Project(props) {
                 target={"_blank"}
                 url={button.url}
                 buttonType={"project-button"}
-                color={button.color}
-                icon={button.icon}
                 text={button.text}
             />
         });
@@ -33,18 +31,22 @@ export default function Project(props) {
     }
 
     return (
-        <li>
+        <div className="project">
             <img src={require("../../images/projects/" + props.logo)} alt={props.heading + " Logo"}/>
             <h2 className="heading">{props.heading}</h2>
             <p>{props.text}</p>
-            <small>
-                <span className="project-year">- {props.year} -</span> <br/>
-                <em><strong>Project Type: {props.projectType}</strong></em>
-            </small>
+            <div className="projectyear">
+            {props.year}
+            </div>
+            <div className="projecttype">
+                {props.projectType}
+            </div>
             <div className="badge-container">
                 {badges()}
             </div>
-            {buttons()}
-        </li>
+            <div className="buttons">
+                {buttons()}
+            </div>
+        </div>
     );
 }

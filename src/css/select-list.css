@@ -16,7 +16,7 @@
 	color: #D3182F;
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 1024px) {
 	#selectList {
 		display: block;
 		margin-bottom: 10px;

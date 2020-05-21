@@ -46,11 +46,6 @@
     .card {
         margin: 15px;
         width: auto;
-        padding: 25px;
         border-radius: 25px;
-    }
-
-    .card .bullet {
-        padding-left: 30px;
     }
 }

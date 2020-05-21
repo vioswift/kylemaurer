@@ -8,7 +8,7 @@ export default function Button(props) {
         <a 
             href={props.url} 
             target={props.target}
-            className={props.buttonType + " " + props.color} 
+            className={props.buttonType + " " + props.color + " " + (props.url ? "zoomhover" : '')} 
             rel="noopener noreferrer">
                 {props.icon ? (<i className={props.icon}></i>) : ''}
                 {" " + props.text}

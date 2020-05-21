@@ -28,3 +28,6 @@ border-color: red;
 
 // bold font
 font-weight: bold;
+
+//font size
+font-size: 15px;

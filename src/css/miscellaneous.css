@@ -16,6 +16,13 @@
     position: absolute;
 }
 
+.zoomhover:hover {
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+}
+
 @media screen and (max-device-width : 1024px) {
     .hideMobile {
         display: none;

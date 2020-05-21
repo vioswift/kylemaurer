@@ -106,15 +106,15 @@ function App() {
                 <Page heading={"Projects"} theme={"dark"}>
                     <h2>Major Projects</h2>
                     <div className="row r100">
-                        <ul className="projects">
+                        <div className="projects">
                             <Projects/>
-                        </ul>
+                        </div>
                     </div>
                     <h2>Small Projects</h2>
                     <div className="row r100">
-                        <ul className="scripts">
+                        <div className="scripts">
                             <SmallProjects/>
-                        </ul>
+                        </div>
                     </div>
                 </Page>
 
