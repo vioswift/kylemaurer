@@ -1,9 +1,8 @@
-.button {
-    cursor: pointer;
+.text-input {
+    margin-top: 5px;
+    padding: 15px;
     border: none;
     color: var(--white);
-    padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -16,16 +15,22 @@
     outline: none;
 }
 
-.button.primary {
+.text-input.primary {
     background-color: var(--primary);
 }
-.button.primary:hover {
+.text-input.primary:hover {
     filter: brightness(150%);
 }
 
-.button.tertiary {
+.text-input.tertiary {
     background-color: var(--tertiary);
 }
-.button.tertiary:hover {
+.text-input.tertiary:hover {
     filter: brightness(150%);
+}
+
+@media screen and (max-device-width : 1024px) {
+    .text-input {
+        width: 100%;
+    }
 }

@@ -145,6 +145,25 @@
             "color": "lightblue"
         },
         { 
+            "text": "Angular",
+            "url": "https://en.wikipedia.org/wiki/Angular_(web_framework)",
+            "category": [
+                "frameworks",
+                "front-end"
+            ],
+            "icon": "devicon-angularjs-plain",
+            "color": "red"
+        },
+        { 
+            "text": "Typescript",
+            "url": "https://en.wikipedia.org/wiki/TypeScript",
+            "category": [
+                "front-end"
+            ],
+            "icon": "devicon-typescript-plain",
+            "color": "blue"
+        },
+        { 
             "text": "JSON",
             "url": "https://en.wikipedia.org/wiki/JSON",
             "category": [
