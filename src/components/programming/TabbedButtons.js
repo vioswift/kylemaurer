@@ -9,7 +9,7 @@ const TabbedButtons = memo(({ item, text, setText }) => {
 
     const getButtons = () => {
         return categories.map((item, keyID) =>
-            <button key={keyID} value={item} onClick={setValue} className={item === selectedValue ? 'active' : ''}>{item === '' ? 'All' : item}</button>
+            <button key={keyID} value={item} onClick={setValue} className={"zoomhover " + (item === selectedValue ? 'active' : '')}>{item === '' ? 'All' : item}</button>
         );
     }
 

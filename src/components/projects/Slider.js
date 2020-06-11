@@ -55,8 +55,8 @@ export default function Slider() {
 
     return (
         <div className={"slider"}>
-            <div className={"slider-button left"} onClick={onClickRight}><i className="fas fa-arrow-left"></i></div>
-            <div className={"slider-button right"} onClick={onClickLeft}><i className="fas fa-arrow-right"></i></div>
+            <div className={"zoomhover slider-button left"} onClick={onClickRight}><i className="fas fa-arrow-left"></i></div>
+            <div className={"zoomhover slider-button right"} onClick={onClickLeft}><i className="fas fa-arrow-right"></i></div>
             <div  id={"sliderScroll"} className={"scroll"}>
                 {getProjectSlides}
                 {getSmallProjectSlides}

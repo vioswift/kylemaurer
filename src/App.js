@@ -119,7 +119,13 @@ function App() {
                 </Page>
 
                 <Page heading={"Contact"} theme={"light"}>
-                    <ContactForm/>
+                    {/* <div className="col center">
+                        <div className="row rauto">
+                            <div className="col"> */}
+                                <ContactForm/>
+                            {/* </div>
+                        </div>
+                    </div> */}
                 </Page>
 
                 <Footer/>

@@ -19,7 +19,7 @@ export default function Navigation() {
     }
 
     const navItems = items.map((item, keyID) =>
-        <li key={keyID}><a href={"#" + item.toLowerCase()} className={keyID === viewport ? 'active' : ''} onClick={closeMenu}>{item}</a></li>
+        <li key={keyID}><a href={"#" + item.toLowerCase()} className={"zoomhover " + (keyID === viewport ? 'active' : '')} onClick={closeMenu}>{item}</a></li>
     );
 
     const menuToggle = (
