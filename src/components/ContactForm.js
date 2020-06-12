@@ -35,6 +35,7 @@ export default function ContactForm() {
     return (
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit.bind()}>
             <input type="hidden" name="form-name" value="contact" /> 
+            <input type="hidden" name="bot-field" />
             <div className="row rauto">
                 <label className="label">Name</label> 
                 <input type="text" name="name" ref={name} className="text-input" placeholder="e.g. Kyle"/>  
