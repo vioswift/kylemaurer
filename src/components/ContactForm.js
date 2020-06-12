@@ -44,6 +44,7 @@ export default function ContactForm() {
     
     return (
         <form name="contact" netlify netlify-honeypot="bot-field" onSubmit={handleSubmit.bind()}>
+            <input type="hidden" name="form-name" value="contact"/> 
             <div className="row rauto">
                 <label className="label">Name</label> 
                 <input type="text" name="name" className="text-input" placeholder="e.g. Kyle"/>  
