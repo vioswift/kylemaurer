@@ -22,10 +22,10 @@ export default function ContactForm() {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", 
-                name: name.current.value,
-                subject: subject.current.value,
-                email: email.current.value,
-                message: message.current.value
+                "name": name.current.value,
+                "subject": subject.current.value,
+                "email": email.current.value,
+                "message": message.current.value
             })
         })
         .then(() => alert("Success!"))
@@ -35,7 +35,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form name="contact" netlify netlify-honeypot="bot-field" onSubmit={handleSubmit.bind()}>
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit.bind()}>
             <input type="hidden" name="form-name" value="contact"/> 
             <div className="row rauto">
                 <label className="label">Name</label> 
