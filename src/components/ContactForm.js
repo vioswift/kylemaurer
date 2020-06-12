@@ -5,7 +5,7 @@ import '../css/inputs/label.css';
 
 export default function ContactForm() {
     return (
-        <form name="contact" method="POST" data-netlify="true" className="form">
+        <form name="contact" netlify netlify-honeypot="bot-field">
             <div className="row rauto">
                 <label className="label">Name</label> 
                 <input type="text" name="name" className="text-input" placeholder="e.g. Kyle"/>  
