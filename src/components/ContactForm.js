@@ -22,10 +22,10 @@ export default function ContactForm() {
     const handleChange = (e) => {
         setFormData({
             ...formData,
-            [e.target.name]: e.target.value,
-            [e.target.subject]: e.target.value,
-            [e.target.email]: e.target.value,
-            [e.target.message]: e.target.value
+            [e.target.name]: e.target.value.trim(),
+            [e.target.subject]: e.target.value.trim(),
+            [e.target.email]: e.target.value.trim(),
+            [e.target.message]: e.target.value.trim()
         });
     };
 
@@ -42,7 +42,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit.bind()}>
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
             <div className="row rauto">
                 <label className="label">Name</label> 
@@ -64,7 +64,7 @@ export default function ContactForm() {
                 <hr/>
             </div>
             <div className="row rauto">
-                <button type="submit" className="button tertiary zoomhover">Send</button> 
+                <button onClick={handleSubmit}className="button tertiary zoomhover">Send</button> 
             </div>
         </form>
     );
