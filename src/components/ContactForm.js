@@ -1,11 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import '../css/buttons/button.css';
 import '../css/inputs/text-input.css';
 import '../css/inputs/label.css';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
 export default function ContactForm() {
+    const [data, setData] = useState(
+        {
+            name : "", 
+            email : "", 
+            subject : "",
+            message : ""
+        }
+    );
+
+    useEffect(() => {
+        setData(
+            {
+                name : "", 
+                email : "", 
+                subject : "",
+                message : ""
+            }
+        );
+    }, []);
+
+    const handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...data })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+    
+        e.preventDefault();
+    };
+    
     return (
-        <form name="contact" netlify netlify-honeypot="bot-field">
+        <form name="contact" netlify netlify-honeypot="bot-field" onSubmit={handleSubmit.bind()}>
             <div className="row rauto">
                 <label className="label">Name</label> 
                 <input type="text" name="name" className="text-input" placeholder="e.g. Kyle"/>  
