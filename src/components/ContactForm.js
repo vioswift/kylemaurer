@@ -15,18 +15,20 @@ export default function ContactForm() {
     const email = useRef();
     const message = useRef();
 
-    const handleSubmit = e => {
-        e.preventDefault()
+    const getFormData = () => {
+        return {
+            name: name.current.value,
+            subject: subject.current.value,
+            email: email.current.value,
+            message: message.current.value
+        }
+    };
 
+    const handleSubmit = e => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", 
-                "name": name.current.value,
-                "subject": subject.current.value,
-                "email": email.current.value,
-                "message": message.current.value
-            })
+            body: encode({ "form-name": "contact", getFormData})
         })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
@@ -36,7 +38,7 @@ export default function ContactForm() {
 
     return (
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit.bind()}>
-            <input type="hidden" name="form-name" value="contact"/> 
+            <input type="hidden" name="form-name" value="contact" /> 
             <div className="row rauto">
                 <label className="label">Name</label> 
                 <input type="text" name="name" ref={name} className="text-input" placeholder="e.g. Kyle"/>  
