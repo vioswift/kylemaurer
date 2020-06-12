@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     left: 0px;
-    height: 270px;
+    height: 300px;
     bottom: 120px;
     overflow-x: hidden;
     white-space: nowrap;
@@ -12,6 +12,13 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-align: center;
+    scroll-behavior: smooth;
+}
+
+.slider .slider-item img {
+    height: auto;
+    width: 70px;
+    float: left;
 }
 
 .slider .slider-item {
@@ -107,7 +114,7 @@
 
 @media screen and (max-device-width : 1024px) {
     .slider {
-        height: 180px;
+        height: 230px;
         bottom: 100px;
     }
 

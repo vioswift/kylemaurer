@@ -4,6 +4,7 @@ import '../css/navigation/topnav.css';
 import '../css/navigation/menuToggle.css';
 import useViewport from '../customhooks/useViewport';
 import Logo from './Logo';
+import Button from './Button';
 
 export default function Navigation() {
     const [toggle, setToggle] = useState(false);
@@ -46,6 +47,12 @@ export default function Navigation() {
                 <a href="#home" className="active">
                     <Logo fullLogo={false}/>
                 </a>
+                <Button 
+                    text={"View Projects"} 
+                    buttonType={"topnav button"} 
+                    color={"primary"} 
+                    url={"#projects"}
+                />
             </div>
         </>
     )

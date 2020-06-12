@@ -3,8 +3,10 @@
     padding: 15px;
     border: none;
     color: black;
+    background-color: var(--white);
     text-decoration: none;
     display: inline-block;
+    width: 100%;
     font-size: 16px;
     border-radius: 25px;
     transition-duration: var(--transition);
@@ -15,22 +17,10 @@
     outline: none;
 }
 
-.text-input.primary {
-    background-color: var(--primary);
-}
-.text-input.primary:hover {
-    filter: brightness(150%);
+.text-input:hover {
+    background-color: white;
 }
 
-.text-input.tertiary {
-    background-color: var(--tertiary);
-}
-.text-input.tertiary:hover {
-    filter: brightness(150%);
-}
-
-@media screen and (max-device-width : 1024px) {
-    .text-input {
-        width: 100%;
-    }
+.text-input:focus {
+    background-color: white;
 }

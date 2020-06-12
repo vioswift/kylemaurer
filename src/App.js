@@ -33,21 +33,6 @@ function App() {
                     <h1 className="visuallyhidden">Home</h1>
                     <div className="landing-bg"></div>
                     <div className="container">
-                        {/* <div className="landing-group">
-                            <div className="full-logo">
-                                <img src={logo} alt="Kyle Maurer Logo"/>
-                                <h1 id="landingPageTitle">Kyle Maurer</h1>
-                                <hr/>
-                                <h2>I.T PROFESSIONAL</h2>
-                            </div>
-                            <div className="quote">
-                                <em>
-                                    <i className="fas fa-quote-left"></i>
-                                    Always think three steps ahead!
-                                </em>
-                            </div>
-                        </div> */}
-
                         <Logo fullLogo={true}/>
                         <Title/>
                         <Slider/>
@@ -119,13 +104,13 @@ function App() {
                 </Page>
 
                 <Page heading={"Contact"} theme={"light"}>
-                    {/* <div className="col center">
+                    <div className="col center">
                         <div className="row rauto">
-                            <div className="col"> */}
+                            <div className="col">
                                 <ContactForm/>
-                            {/* </div>
+                            </div>
                         </div>
-                    </div> */}
+                    </div>
                 </Page>
 
                 <Footer/>
