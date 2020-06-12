@@ -21,11 +21,12 @@ export default function ContactForm() {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", 
-                name: name.current.value,
-                subject: subject.current.value,
-                email: email.current.value,
-                message: message.current.value
+            body: encode({ 
+                "form-name": "contact", 
+                "name": name.current.value,
+                "subject": subject.current.value,
+                "email": email.current.value,
+                "message": message.current.value
             })
         })
         .then(() => alert("Success!"))
