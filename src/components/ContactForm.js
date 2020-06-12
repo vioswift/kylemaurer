@@ -33,7 +33,12 @@ export default function ContactForm() {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", formData})
+            body: encode({ "form-name": "contact", 
+                name: formData.name,
+                subject: formData.subject,
+                email: formData.email,
+                message: formData.message
+            })
         })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
