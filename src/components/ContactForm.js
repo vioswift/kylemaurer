@@ -15,20 +15,16 @@ export default function ContactForm() {
     const email = useRef();
     const message = useRef();
 
-    const getFormData = () => {
-        return {
-            name: name.current.value,
-            subject: subject.current.value,
-            email: email.current.value,
-            message: message.current.value
-        }
-    };
-
     const handleSubmit = e => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", getFormData})
+            body: encode({ "form-name": "contact", 
+                name: name.current.value,
+                subject: subject.current.value,
+                email: email.current.value,
+                message: message.current.value
+            })
         })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
