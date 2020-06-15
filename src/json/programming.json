@@ -4,7 +4,7 @@
         "front-end",
         "frameworks",
         "CMS",
-        "Data Modeling"
+        "Database"
     ],
     "programming": [
         { 
@@ -90,7 +90,7 @@
         },
         { 
             "text": "SQL",
-            "url": "https://en.wikipedia.org/wiki/SQL",
+            "url": "https://en.wikipedia.org/wiki/MySQL",
             "category": [
                 "back-end"
             ],
@@ -164,12 +164,13 @@
             "color": "blue"
         },
         { 
-            "text": "JSON",
+            "text": "MySQL",
             "url": "https://en.wikipedia.org/wiki/JSON",
             "category": [
-                "Data Modeling"
+                "Databases",
+                "back-end"
             ],
-            "icon": "devicon-javascript-plain",
+            "icon": "devicon-mysql-plain",
             "color": "yellow"
         },
         { 

@@ -4,7 +4,7 @@ import '../../css/select-list.css';
 
 
 const TabbedButtons = memo(({ item, text, setText }) => {
-    const categories = ["", "Front-end", "Back-end", "Frameworks", "Data Modeling", "CMS"];
+    const categories = ["", "Front-end", "Back-end", "Frameworks", "Databases", "CMS"];
     const [selectedValue, setSelectedValue] = useState('');
 
     const getButtons = () => {

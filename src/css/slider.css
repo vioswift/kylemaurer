@@ -123,4 +123,8 @@
         height: 140px;
         font-size: 14px;
     }
+
+    .slider .slider-item img {
+        width: 50px;
+    }
 }
