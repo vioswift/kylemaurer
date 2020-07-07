@@ -51,19 +51,19 @@ export default function ContactForm() {
             <input type="hidden" name="form-name" value="contact" />
             <div className="row rauto">
                 <label className="label">Name</label> 
-                <input type="text" name="name" onChange={handleChange} className="text-input" placeholder="e.g. Kyle"/>  
+                <input type="text" name="name" onChange={handleChange} className="text-input"/>  
             </div>
             <div className="row rauto">
                 <label className="label">Email</label> 
-                <input type="email" name="email" onChange={handleChange} className="text-input" placeholder="example@gmail.com"/>                    
+                <input type="email" name="email" onChange={handleChange} className="text-input"/>                    
             </div>
             <div className="row rauto">
                 <label className="label">Subject</label> 
-                <input type="text" name="subject" onChange={handleChange} className="text-input" placeholder="Great Projects"/>
+                <input type="text" name="subject" onChange={handleChange} className="text-input"/>
             </div>
             <div className="row rauto">
                 <label className="label">Message</label> 
-                <textarea name="message" onChange={handleChange} className="text-input" placeholder="Message here..." rows="4" cols="66"></textarea>                    
+                <textarea name="message" onChange={handleChange} className="text-input" rows="4" cols="66"></textarea>                    
             </div>
             <div className="row rauto">
                 <hr/>

@@ -12,7 +12,7 @@ export default function Footer() {
                     <small>
                         Copyright &#169;
                         {" " + (new Date().getFullYear()) + " "}
-                        Kyle Maurer. All Rights Reserved
+                        Kyle Maurer
                     </small>
                 </div>
             </div>

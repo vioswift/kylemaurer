@@ -31,7 +31,9 @@
 .full-logo {
     width: 100%;
     height: 250px;
-    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 10%;
 }
 
 .full-logo img {

@@ -44,7 +44,7 @@
     }
 }
 
-@media screen and (max-device-width : 1024px) {
+@media screen and (max-width: 44em) {
     .main {
         margin-left: 0;
         width: calc(100%);

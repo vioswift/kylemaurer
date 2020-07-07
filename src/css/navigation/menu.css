@@ -89,7 +89,7 @@
     font-size: 45px;
 }
 
-@media screen and (max-device-width : 1024px) {
+@media screen and (max-width: 44em) {
     .menu {
         position: fixed;
         left: -240px;

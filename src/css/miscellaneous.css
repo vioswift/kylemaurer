@@ -23,7 +23,7 @@
     transform: scale(1.05); 
 }
 
-@media screen and (max-device-width : 1024px) {
+@media screen and (max-width: 44em) {
     .hideMobile {
         display: none;
     }

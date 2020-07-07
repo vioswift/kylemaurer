@@ -112,7 +112,7 @@
     ,url("../images/projects/slider/slider10.jpg");
 }
 
-@media screen and (max-device-width : 1024px) {
+@media screen and (max-width: 44em) {
     .slider {
         height: 230px;
         bottom: 100px;
