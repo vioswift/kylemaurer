@@ -9,7 +9,7 @@ import Button from './Button';
 export default function Navigation() {
     const [toggle, setToggle] = useState(false);
     const viewport = useViewport();
-    const items = ["Home", "About", "Projects", "Experience", "Programming", "Technologies", , "Contact"];
+    const items = ["Home", "About", "Projects", "Experience", "Programming", "Technologies", "Contact"];
 
     const handleClick = () => {
         setToggle(!toggle);
