@@ -50,26 +50,26 @@ export default function ContactForm() {
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
             <div className="row rauto">
-                <label className="label">Name</label> 
+                <label className="label tertiary">Name</label> 
                 <input type="text" name="name" onChange={handleChange} className="text-input"/>  
             </div>
             <div className="row rauto">
-                <label className="label">Email</label> 
+                <label className="label tertiary">Email</label> 
                 <input type="email" name="email" onChange={handleChange} className="text-input"/>                    
             </div>
             <div className="row rauto">
-                <label className="label">Subject</label> 
+                <label className="label tertiary">Subject</label> 
                 <input type="text" name="subject" onChange={handleChange} className="text-input"/>
             </div>
             <div className="row rauto">
-                <label className="label">Message</label> 
+                <label className="label tertiary">Message</label> 
                 <textarea name="message" onChange={handleChange} className="text-input" rows="4" cols="66"></textarea>                    
             </div>
             <div className="row rauto">
                 <hr/>
             </div>
             <div className="row rauto">
-                <button onClick={handleSubmit}className="button tertiary zoomhover">Send</button> 
+                <button onClick={handleSubmit}className="button primary zoomhover">Send</button> 
             </div>
         </form>
     );

@@ -27,9 +27,8 @@
     background-color: #152F4F;
 }
 
-.bluegradientbg {
-    background: rgb(34,77,130);
-    background: linear-gradient(0deg, var(--primary) 0%, #212121 100%);
+.newpagebg {
+    background-color: var(--white-light);
 }
 
 .remove-gap {

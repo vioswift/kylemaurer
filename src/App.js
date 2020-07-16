@@ -58,7 +58,23 @@ function App() {
                     </div>
                 </Page>
 
-                <Page heading={"Experience"} theme={"light"}>
+                <Page heading={"Projects"} theme={"light"}>
+                    <h2 className="h2 tertiary">Major Projects</h2>
+                    <div className="row r100">
+                        <div className="projects">
+                            <Projects/>
+                        </div>
+                    </div>
+
+                    <h2 className="h2 tertiary">Small Projects</h2>
+                    <div className="row r100">
+                        <div className="scripts">
+                            <SmallProjects/>
+                        </div>
+                    </div>
+                </Page>
+
+                <Page heading={"Experience"} theme={"dark"}>
                     <div className="col center">
                         <div className="row rauto">
                             <div className="col">
@@ -71,11 +87,11 @@ function App() {
                     </div>
                 </Page>
 
-                <Page heading={"Programming"} theme={"dark"}>
+                <Page heading={"Programming"} theme={"light"}>
                     <Programming/>
                 </Page>
 
-                <Page heading={"Technologies"} theme={"light"}>
+                <Page heading={"Technologies"} theme={"dark"}>
                     <div className="col center">
                         <div className="row rauto">
                             <div className="col">
@@ -84,21 +100,6 @@ function App() {
                             <div className="col">
                                 <Cards indexStart={4} indexEnd={8} colors={["darkgrey", ""]}/>                    
                             </div>
-                        </div>
-                    </div>
-                </Page>
-
-                <Page heading={"Projects"} theme={"dark"}>
-                    <h2>Major Projects</h2>
-                    <div className="row r100">
-                        <div className="projects">
-                            <Projects/>
-                        </div>
-                    </div>
-                    <h2>Small Projects</h2>
-                    <div className="row r100">
-                        <div className="scripts">
-                            <SmallProjects/>
                         </div>
                     </div>
                 </Page>

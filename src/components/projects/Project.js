@@ -33,7 +33,7 @@ export default function Project(props) {
     return (
         <div className="project">
             <img src={require("../../images/projects/" + props.logo)} alt={props.heading + " Logo"}/>
-            <h2 className="heading">{props.heading}</h2>
+            <h2>{props.heading}</h2>
             <p>{props.text}</p>
             <div className="projectyear">
             {props.year}

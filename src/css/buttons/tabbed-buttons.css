@@ -7,7 +7,7 @@
 
 .tabbed-buttons button {
     background-color: transparent;
-    color: var(--white);
+    color: var(--tertiary);
     float: left;
     outline: none;
     cursor: pointer;

@@ -33,7 +33,7 @@ export default function SmallProject(props) {
 
     return (
         <div className="project">
-            <h2 className="heading">{props.heading}</h2>
+            <h2>{props.heading}</h2>
             <div className="badge-container">
                 {badges()}
             </div>

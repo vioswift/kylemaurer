@@ -8,12 +8,14 @@ export default function Page(props) {
     const getTheme = () => {
         if (props.theme === "light") {
             return ({
-                background: "bluegradientbg"
+                background: "newpagebg",
+                heading: "secondary"
             });
         }
         if (props.theme === "dark") {
             return ({
-                background: ""
+                background: "",
+                heading: "primary"
             });
         }
     }
@@ -22,7 +24,7 @@ export default function Page(props) {
         <div className={"newpage " + getTheme().background}>
             <a className="visuallyhidden" id={getHeadingLower()} href={"#" + getHeadingLower()}>{getHeadingLower()}</a>
             <div className="container">
-                <h1 className="heading-line">{props.heading}</h1>
+                <h1 className={"heading " + getTheme().heading}>{props.heading}</h1>
                 {props.children}
             </div>
         </div>
