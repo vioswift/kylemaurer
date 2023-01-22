@@ -1,9 +1,0 @@
-.label {
-    margin-top: 15px;
-    margin-bottom: 2px;
-}
-
-.label.tertiary {
-    color: var(--tertiary);
-    /* color: red; */
-}
